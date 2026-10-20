@@ -1,5 +1,9 @@
 # LaoZhou Foods — laozhoufoods.com
 
+GitHub repository: [diqpet-oss/laozhoufoods](https://github.com/diqpet-oss/laozhoufoods)
+
+This repository contains the deployable static website at its root. It is not nested under a `site/` folder.
+
 Static, responsive B2B website built from the supplied LaoZhou brand guide, product catalogue, factory footage and social assets.
 
 ## Run locally
