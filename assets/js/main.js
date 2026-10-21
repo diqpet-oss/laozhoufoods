@@ -153,19 +153,4 @@
   document.querySelectorAll("[data-current-year]").forEach((element) => {
     element.textContent = new Date().getFullYear();
   });
-
-  // Keep lazy product art stable on slower connections: retry only after a real load error.
-  document.querySelectorAll(".product-card img, .range-visual img").forEach((image) => {
-    image.addEventListener("error", () => {
-      const fallback = image.currentSrc || image.src;
-      if (!fallback || image.dataset.retried === "true") return;
-      image.dataset.retried = "true";
-      const retry = new URL(fallback, window.location.href);
-      retry.searchParams.set("retry", "1");
-      window.setTimeout(() => {
-        image.srcset = "";
-        image.src = retry.toString();
-      }, 300);
-    });
-  });
 })();
