@@ -1,5 +1,9 @@
 # LaoZhou Foods — laozhoufoods.com
 
+GitHub repository: [diqpet-oss/laozhoufoods](https://github.com/diqpet-oss/laozhoufoods)
+
+This repository contains the deployable static website at its root. It is not nested under a `site/` folder.
+
 Static, responsive B2B website built from the supplied LaoZhou brand guide, product catalogue, factory footage and social assets.
 
 ## Run locally
@@ -75,8 +79,6 @@ Source material remains in the parent directory. The published image set is unde
 The header uses the brand-red logo for strong contrast against the cream navigation. The footer uses the white version against the dark footer.
 
 The home-page hero uses a clean 4K factory crop that excludes the source video's logo overlay and subtitle area. Its 768, 1280, 1920, 2560 and 3840 px versions have been checked with local Vision OCR and contain no detected text.
-
-Product gallery imagery is sourced from the supplied 1440 px catalogue artwork and served in 720 / 1080 / 1440 px responsive variants under `assets/images/products/`.
 
 Fonts are self-hosted in `assets/fonts/`: Cormorant Garamond and Manrope (SIL Open Font License).
 
