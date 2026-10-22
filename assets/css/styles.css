@@ -1801,6 +1801,63 @@ p {
   color: var(--gold-pale);
 }
 
+.doc-item strong {
+  flex: 0 0 42%;
+  color: var(--red);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.doc-item span {
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.doc-item a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.buyer-facts-grid {
+  display: grid;
+  border: 1px solid var(--line);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.buyer-fact {
+  min-height: 250px;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  padding: 30px;
+}
+
+.buyer-fact h3 {
+  margin: 17px 0 13px;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.buyer-fact p:last-child {
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+
+@media (max-width: 900px) {
+  .buyer-facts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .buyer-fact {
+    min-height: 0;
+    border-right: 0;
+  }
+}
+
 /* Story */
 .story-hero {
   position: relative;
@@ -3130,6 +3187,10 @@ p {
 
   .doc-grid {
     grid-template-columns: 1fr;
+  }
+
+  .buyer-fact {
+    padding: 24px;
   }
 
   .form-grid {
