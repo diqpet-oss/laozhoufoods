@@ -1,8 +1,33 @@
 {
   "redirects": [
     {
-      "source": "/:path((?!.*\\.)[^/]+)",
-      "destination": "/:path.html",
+      "source": "/faq",
+      "destination": "/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/products",
+      "destination": "/products.html",
+      "permanent": true
+    },
+    {
+      "source": "/wholesale",
+      "destination": "/wholesale.html",
+      "permanent": true
+    },
+    {
+      "source": "/craft",
+      "destination": "/craft.html",
+      "permanent": true
+    },
+    {
+      "source": "/story",
+      "destination": "/story.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
       "permanent": true
     }
   ]
