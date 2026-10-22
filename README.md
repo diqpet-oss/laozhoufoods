@@ -64,6 +64,13 @@ Replace or verify the following with the brand owner. These are intentionally no
 The English copy relies on verifiable catalogue and factory-film facts:
 
 - founded in 1986
+
+Search and AI retrieval:
+
+- Canonical URLs use the live `www.laozhoufoods.com` host.
+- `sitemap.xml` lists the six main pages plus the buyer FAQ.
+- Organization, WebSite, product collection, service, breadcrumb and FAQ structured data explain the business without inventing certifications, prices or stock availability.
+- `llms.txt` gives AI retrieval systems a concise, source-linked overview of the company and its products.
 - slow-braised flavor and ready-to-eat positioning
 - 9-month ambient shelf-life stated in the catalogue
 - 15 standardized production steps
