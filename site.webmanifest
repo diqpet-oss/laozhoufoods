@@ -9,7 +9,7 @@
   "icons": [
     {
       "src": "/assets/images/laozhou-mark.png",
-      "sizes": "any",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
