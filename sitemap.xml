@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://laozhoufoods.com/</loc>
+    <loc>https://www.laozhoufoods.com/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.laozhoufoods.com/assets/images/og-image.jpg</image:loc><image:title>LaoZhou slow-braised Chinese tofu snacks</image:title></image:image>
   </url>
   <url>
-    <loc>https://laozhoufoods.com/products.html</loc>
+    <loc>https://www.laozhoufoods.com/products.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://www.laozhoufoods.com/assets/images/products/high-broth-1080.webp</image:loc><image:title>LaoZhou high-broth tofu</image:title></image:image>
+    <image:image><image:loc>https://www.laozhoufoods.com/assets/images/products/classic-braised-1080.webp</image:loc><image:title>LaoZhou classic braised tofu</image:title></image:image>
+    <image:image><image:loc>https://www.laozhoufoods.com/assets/images/products/crispy-skin-1080.webp</image:loc><image:title>LaoZhou crispy-skin tofu</image:title></image:image>
+    <image:image><image:loc>https://www.laozhoufoods.com/assets/images/products/meat-style-1080.webp</image:loc><image:title>LaoZhou meat-style tofu</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.laozhoufoods.com/wholesale.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://laozhoufoods.com/wholesale.html</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://laozhoufoods.com/craft.html</loc>
+    <loc>https://www.laozhoufoods.com/craft.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.laozhoufoods.com/assets/images/responsive/factory-1920.webp</image:loc><image:title>LaoZhou Chinese tofu factory</image:title></image:image>
   </url>
   <url>
-    <loc>https://laozhoufoods.com/story.html</loc>
+    <loc>https://www.laozhoufoods.com/story.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://laozhoufoods.com/contact.html</loc>
+    <loc>https://www.laozhoufoods.com/contact.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.laozhoufoods.com/faq.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
