@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://laozhoufoods.com/sitemap.xml
+Sitemap: https://www.laozhoufoods.com/sitemap.xml
