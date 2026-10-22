@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path((?!.*\\.)[^/]+)",
+      "destination": "/:path.html",
+      "permanent": true
+    }
+  ]
+}
