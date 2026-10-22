@@ -1,0 +1,16 @@
+{
+  "name": "LaoZhou Foods",
+  "short_name": "LaoZhou",
+  "description": "Chinese tofu snacks from LaoZhou Foods, made since 1986.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf3",
+  "theme_color": "#9d1b20",
+  "icons": [
+    {
+      "src": "/assets/images/laozhou-mark.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
