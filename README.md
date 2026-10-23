@@ -1,1 +1,103 @@
-Ϋ}΄αΞµιώZλΞο΄γ®ιώΈο}΄{o4χ΄ιΞµιώΪλΞοΊιώλχΩξ·ιώΡ­γΎ½ο<ο¶ΫNφλτιώχλήψιώφοέΪΫN[λ½ο^τλψΩήο~χΩώλ^ν®Όιώωλ®ιώΈο~]ΫΞΌοψοNχέ­Ωώ»λήψλΞωλmλ~ιέλ½ο^τλψΩήο~χΩώλ^ν®Όιώωλ®ιώΈο}½Ρ­ηΌλήχΫNφλτιώχλήψιώφοέ΄λ~ιξψλ^½ιξχΫNψλΞΉΫNΈλτιΞοήµλnλ΄ο~ψλ^ψλή·ΫNϋλ¶ο~½οΉΫNµο΄λήψο}΄οnιώψΩν΄γήψΫN½ο}΄ιξο΄ιξΉο~ψλΈΫNωιξΈλφΫNµΫN΄ο~½οΉΩώ΄ΫNΊιώλΉοmΡ­η~ψλ^ψλή·ΩΝ΄οnΉο~τιώο~½ο®ΉΫN6ίn6ΫNϋλ¶ο~½οΉΫN¶ο½ιΞψΫNΊοnιέ΄οΌλ΄ο~ωοNτιΞ½λΈΫNλ^ε®ΌιώωΫN¶οnµιξΈΫN»ο½λΉΩΝ΄οNφιώΈο·ο΄λ~µοµιΞλΎωλΫNΊλ^·οοnύΫNΊιώοµλΎΉΫNµιξΈΫNχιώ·λήµιΝ΄λ^χο~ΉοχΩνΡ­·Ϋ}΄ηnωιν΄ιΞλ~µιΞοέΡ®:οnιέ΄οΌλήχΫNΈλήφλ·οοnύέ­Ρ®΄λN΄λnµο~ΌΡ®τοήψλΞινχΫMιέ΄λΞψοτΩξχλφο®Ήοm΄ίυί½χΡ®΄λN΄Ρ­αώτλΫN΄λΞψοτέ­ΩύυίmϋΩντΩντΩνυέ­ψί]ϋί}λMΡ­Ϋ}·ΫNtλ^»λχΡ­Ωέ΄λN½ιξΈλόΩξΌοιΞ΄ΫG¶σOxΫN¶οnµιξΈΩήλΈΫNΌιώλ΄οNµλΎΉΡ­ΫN΄οNφιώΈο·οχΩξΌοιΞ΄ΫG¶σOxΫNΊιώωοm΄οNφιώΈο·ο΄οnµιξ»λχΩΝ΄λ®λ^ϊιώφο}΄λ^λ΄λ®οnλ^ψο}Ωέ΄λN·οnµλ®ψΩξΌοιΞ΄ΫG¶σOxΫNτοnλ~Ήο~χΩΝ΄οNφιώΈο·ο½ιώΫNµιξΈΫNυοµιΞ½ούΫNχοοnύΡ­ΫN΄ο~ψιώφοέλΞψιήλM΄{o4χ΄λnφλ^λ΄λΞ½ο~ψιώφοέ΄λ^λ΄ιή½ιΞΉο~ψιώλχΡ­ΫN΄οΎΌιώλχλ^λλΞψιήλM΄{o4χ΄οφλ^ΈλΫNΈλήχοφλή¶οψλήιν΄λ^λ΄οNφλήϊλ^ψλ΄ιΞµλnΉιΝΩέ΄λN·ιώοµλ~ψΩξΌοιΞ΄ΫG¶σOxΫNΊιώφιέΫN·ιώοµλ~ψΫNΈλψλ^½ιΞχΫNµιξΈΫNψοnµλΉΫN:γ^uΡ­ΫN΄οΌλ^ι½οήολΞψιήλM΄{o4χ΄λ®οnΫNχο·λ~Ήο~χΫNτλ^»λΩέ΄λNτοn½ο®µλ~ύΩξΌοιΞ΄ΩΝ΄λNψλφιήχΩξΌοιΞ΄ΩΝ΄λMψίMψΩξΌοιΞ΄Ρ­Ϋ}·ΫN8λτιΞοέΡ­·Ϋ}·ΫNλψιΞ½λ®ύΫG¶σOxΫNφλ·ιώιήΉιξΈλΈΡ­ηΌλ΄λήλ~οΈλΈΫN΄ιξΉολήΊοέοιήλM΄ο~ΉοχΫNχλ·οφλήψοέ΄λΞΉλ^Έλφο}ΫN·λ^·λΞΉΫNφολχΫNµιξΈΫNτο¶ιΞ½ο~ΌλχΫNψλΞ½ο}΄λ®ιΞΈλφΩνΡ­υΩν΄γ~ιξλ·ο΄οΌλ΄οnΉοNο~½οοnύΫN·ιώοµλήλήλ½΄οΌλήχΫN΄ο~½οΉΩώ΄ΫNΈλήφλ·οοnύΫNψιύ΄αξΉολήΊοέΡ­φΩν΄η~Ήο΄Ω­ηNωλnλήχλΝ΄λ½οnΉλ~ψιώφοέΩ­΄οΫN΄ο~½οΉλM΄ΫΞοm΄οnωιν΄αξΉολήΊοέ΄λ®φιώΫN½ιξχλήΈλ΄λNχλήψλλM½Ωνί}ΫN5λΈΫN΄ιΞµιώΪλΞοΊιώλχΩξ·ιώλM΄λ^χΫNψλΞΉΫN·οχοιέ΄λιήµλήΫNµιξΈΫNΊιώιΞο½΄αξΉολήΊοέ»ο}΄γη}΄λήο~ψοnωλ~ψλήιξχΩνίΫN5λΈΫN΄οΎϋο½ιΞµιώΪλΞοΊιώλχΩξ·ιώλMΫNχλψΫNψλΞΉΫNΈλχλήφλΈΫNτοn½ιήµοnύΫNΈιώλ^½ινΫNµιξΈΫNΉιξµλnλ΄οΌλ΄λ^ωοιήµο½λ~µιΞοέ΄ιήµιξµλΎΉλ΄γΞxηtη}΄λ~ΉοnψλήΊλή·λ^ψλΡ­γ®οnο}΄οχλ΄αξΉολήΊοέ΄γ®οnο}ΫN5λ®ψλφΫNψλΞΉΫNΊλήφο~ψΫNτοnλωλ~ψλήιν΄λΉοNιώύΩΝ΄λ~ιξΊλήφιέ΄λnοΌΫN΄λ~ιξψλ^·ολήο^ωλήφοή΄ΫNµιξΈΫN΄οφλ^Έλλήο^ωλήφοή΄ΫNµοNτλµοm΄ολΉοm΄Ω­γ®οnο}Ω­΄λήΫNψλΞΉΫNλψιΞ½λ®ύΫNΈλ^χλΞ¶ιώµοnΈΩν΄η~ωλnλήχο~½ιώο}΄οnΉλ½οnΉλ~ψΫNψιύ΄λMοΌλ^ι½οήολΞψιήλMΡ­Ϋ}·Ϋ}΄γ~ιώωλΊιΞµοnΉΫNtλ^»λχΡ­ητιΞλ^ΈΫNοm΄λ~ιξλ·ο΄οΌλ΄λNχλήψλλM΄λ½οnΉλ~ψιώφοέ΄λ^χΫNψλΞΉΫNτοnι®Ήλ~ψΫNοψοNωοΫNxλΞΉΫNχοµο½λ}΄λ®½ιΞΉο}΄οΎοn›ΫNµο}λήχΩν΄αξΉολήΊοέ΄λ®οnΫNΌλ^λλήλ½΄λλχΫNιώψΫNµοNτιΞύέ½΄λ~ιξΊλή»οφλ΄λ]΄γ®οnο}΄λλτιώ½ιξψΫNοm΄λ^ιώψλΞΉοm΄ο~ΉοnϊλφιΞΉο~χΫNΉιξΈοNλήο΄λnΉλ®οnΉΫNλ^ωιξ·λΝΡ­Ϋ}·ΫN6λΊιώφλ΄ιΞµολ~ΌΫG¶σOxΫNφλυο½οnΉλ΄ιώϋιξΉοm΄λ~ιξΊλήφιήµο½ιώΡ­ηnΉοNλ^·λ΄ιώφΫNϊλφλήΊοέ΄οΌλ΄λ®ιΞιώϋλήλ½΄οΎ½οΌΫNψλΞΉΫN¶οnµιξΈΫNοΎλφΩν΄ηΌλχλ΄λ^φλ΄λήοΉιξψλήιξµιΞοέ΄ιξο΄λήο®ΉιξψλΈΫN½ιν΄οΌλ΄ο~½οΉέ­Ρ­ΫNtο¶ιΞ½λ}΄λήο^ωλήφοέ΄λλ^½ιΝΪΫN΄ιΞµιώΪλΞοΊιώλ4λΎλ^½ιΝλ~ιή΄ΫMΌλ~ιξΊλήφιήΉλ½ΩνΩέ΄ηNωλnλή·ΫN{λΞµοχγ^τοMΪΫN΄Ω½όί­΄ί]όίM΄ί­όίΝόΫMύίΝχί®΄ΩνΩέ΄αΞΉλΎµιΝ΄λ~ιήτλ^οέ΄ιξµιήΉΩΝ΄οnΉλΎ½ο~ψλφλΈΫNµλΈοnΉο~χΫNµιξΈΫN7λΞ½ιξΉο~ΉΫN·ιώοNµιξύΫNΈλψλ^½ιΞχΫNΊιώφΫNψλΞΉΫNΊιώοΉοmιΞΉλΎµιΝ΄οNµλΎΉο}Ρ­ΫN7λφο½λ®½λ~µοΉΫNλ^λχΫNµιξΈΫNολnΉοnχΩΝ΄ο®µιΞ½λ½ούΫNΈλ^ψλχΫNµιξΈΫNψλΞΉΫNΉοΞµλ~ψΫNwαΎyο}΄λ~ο®ΉοnΉλΡ­ΫN=ιξ»οnΉλ½λοΫNοψοn½ο½ιώΫNµιξΈΫNµιΞλφλΎΉιν΄λΉλ~λ^φλ^ψλήιξχΫNΊιώφΫNΉλ^·λΝ΄λόοNοnψΫNwαΎyΩνΩέ΄γ~µοnψιώΫNΈλήλο~½ιώο}ΫN»οnο~χΫNϋλ½λΎΌοΫNτλ^ιΞΉο΄λ~ιξΊλή»οφλ^ψλήιν΄λ^λ΄αήη]Ρ­ΫN9οΞτιώφο΄γήλ~οΉοnο}ΫNλµλ΄ο½ιήΉο}ΫNτοn½λ~ΉΫNϊλ^λήΈλήψοέ΄λ^λ΄ο~µιήτιΞΉΩώχλΞ½οNτλήλ½΄λ~Όλ^φλΎΉο}Ρ­ΫN7ιώωιξψοnύΩήχοNΉλ~½λ®½λ}΄ιΞµλnΉιΞ½ιξ»ΫNµιξΈΫN½ιήτιώφοΉοmιώΊΩήφλ·ιώφλ΄οnΉο~τιώο~½λn½ιΞ½ο½λχΩνΩέ΄ηΎΌλψλΞΉοm΄λ^οέ΄οNφιώΈο·ο΄λήχΫNΉιΞ½λΎ½λnλ΄λ®οm΄ο®ΉλΎµινΫNϊλ»λψλ^φλήµινΫNΌλ^λ^ΩΝ΄ιξινγΎαύ΄ιώφΫNχλήλήλ^φΫN·ιΞµλήο}Ρ­ΫN:λήλ^ΫNφλϊλήΉο½΄ιώΊΫNψλΞΉΫNτοn½ο®µλ~ύΫNτιώλή·οέ΄λ^λ΄οΎΉλnχλήψλ΄οΉοnο}΄λ^»λ^½ιξχο΄οΌλ΄ιώτλφλ^ψλήλ½΄λο½ούΫNµιξΈΫNψλ^φλΎΉο΄ιήµοn›λψο}Ρ­Ϋ}·ΫN7ιώοΉιξψΫNτιώλή·οέ΄οχλΈΡ­ηΌλ΄γλΎλήχλΝ΄λ~οNύΫNφλλήΉο}΄ιώΫNϊλφλήΊλήµλnλ΄λ~µοµιΞλΎωλ΄λ^λ΄λ®µλ~ψιώφοέλ®½ιΞΫNΊλ^·οχέ­Ρ­ΫNΊιώωιξΈλΈΫN½ιν΄ί]ύίΝϊΡ­η~Ήλ^φλ~ΌΫNµιξΈΫN5γέ΄οnΉοφλήΉο®µιΝΪΡ­Ωέ΄γ~µιξιξ½λ~µιΝ΄ηvαΞχΫNωο~ΉΫNψλΞΉΫNλήϊλ΄λNϋοΎϋΩξλ^ν®Όιώωλ®ιώΈο}λ~ιή΄ΫNΌιώχοΡ­ΫN΄ο~½οΉιήµοMοΞιΞ΄ΫNλήχοχΫNψλΞΉΫNχλήόΫNλ^½ιν΄οNµλΎΉο}΄οNοχΫNψλΞΉΫN¶ούλφΫN:γ^uΩνΩέ΄αώφλΎµιξ½ν®µο½ιώΩΝ΄ηΎΉλnwλήψλΫNτοnλωλ~ψΫN·ιώιΞΉλ~ψλήινΫNχλφο®½λ~ΉΩΝ΄λnφλµλ·οnωιή¶ΫNµιξΈΫN:γ^uΫNχοφο·οωοnΉλ΄λµοµΫNΉοΞτιΞµλήΫNψλΞΉΫN¶οχλήλχο}΄οΎ½οΌιώωο΄λήο®Ήιξψλήλ½΄λ~ΉοnψλήΊλή·λ^ψλήιξχΩΝ΄οNφλή·λχΫNοm΄ο~ψιώ·ι½΄λ^ϊλ^½ιΞµλn½ιΞ½ούΩνΩέ΄λNιΞο}οόο΄ΫN»λήϊλχΫN5γέ΄οnΉοφλήΉο®µιΝ΄ο~ύο~ψλο}΄λ]΄λ~ιξ·λήχλΫNχιώωοn·λιΞ½ιξ›λΈΫNο®ΉοnϊλήΉο½΄ιώΊΫNψλΞΉΫN·ιώοNµιξύΫNµιξΈΫN½οχΫNτοnλωλ~ψο}Ρ­ΫNχιΞο½λnφλ^½ο~Ήλ΄λ®λ^ϊιώφΫNµιξΈΫNφλµλύΩήψιύλµο΄οNο~½ο½ιώλήλ½Ωέ΄ίέιήιξψλΝ΄λ^λn½λο΄ο~Όλλ­ιΞ½λ®ΉΫNχοµοΉλ΄λήΫNψλΞΉΫN·λ^ψλ^ιώ»οΉΡ­ΫMυί΄ο~ψλ^λµοnΈλήΪλΈΫNτοnλωλ~ψλήιν΄ο~ψλτο}Ωέ΄ηNγ}λ~ιξψοnιΞλΈΫNΊιώφιή½ιξ»ΫNµιξΈΫNµΫNιώΈλφιν΄λ~ιξλ·οΉλ΄οNφιώΈο·ο½ιώΫNλήλΩέ΄ιΞ½ο~ψλΈΫNφλψλ^½ιΝ΄λ^λ΄ίm΄s{ΫMφΩνωΫN›λ½΄λnωιΞ›ΫNΊιώφιήµοχΡ­ηΌλ΄ο~½οΉΫNΈιώΉο}΄Ω­ιξοΩ­΄λ~λ^½ιέ΄ολήϊλφο~µιΝ΄ο®ΉλΎµινΫNϊλ»λψλ^φλήµινΫNΌλ^λ^ΩΝ΄ιξινγΎαύΫNτοnΉο~Ήοnϊλ^ψλήϊλλ®φλΉΫNοm΄λΞΉλ^οΌΩή¶λλΊλήψΫNχοµοωο}ΫN5ιξ½ιήµιΝλΉοn½ο®Ήλ΄λnφιώψλΝ΄λ^λ΄λ®λ^ϊιώφΫNΈλήφλ·ο½ιώο}΄λόλήχο΄λήΫNψλΞΉΫNφλ^λΎΉΩν΄γΉο~ψλήλ^ψλήινιήµοn›λψΫNΈιώ·ολοµο½ιώΫNµιξΈΫNΊλήλ^ΫNτοnλωλ~ψΫN·ιΞµλήο}΄ιήωο~ψΫN¶λ΄λ~ιξΊλήφιήΉλ΄οNΉοm΄η~ηΡ­Ϋ}·ΫN5ο~χλψο}Ρ®wιώωοn·λ΄ιήµοΉοn½λ^ΫNφλλ^½ιξχΫN½ιν΄οΌλ΄οNµοnΉιξψΫNΈλήφλ·οοnύΩν΄ηΌλ΄οNωλnλήχλΞΉλ΄λήλ^»λ΄ο~Ήο΄λήχΫNωιξΈλφΫN΄λ^χο~ΉοχΩώ½ιήµλΎΉο}λMΫN:λ^·οοnύΫNχο½ιΞο}΄οΎΉοnΉΫNΉοΞψοnµλ~ψλΈΫNΊοnιέ΄οΌλ΄ιξµο½ο®ΉΫMψα½΄ο~οφλ~ΉΫNµιξΈΫNµοnΉΫNχλφο®Ήλ΄οnΉο~τιώο~½ο®ΉιΞύΫMΌί½ϊίΝ΄Ωύ΄ί]φίΝτΫMΫMυίέφίM΄Ωύ΄ίmωί­τΫMΫMχίΝψίM΄οNόΫέΫN:οιΝοnΉο~ιΞωο½ιώΫNΈλλήϊλφοέ΄ο~ψλήιΞχΫNµοnΉΫNχοοnΉλ΄ο~ΉοNµοnµοΉιΞύΫN½ιν΄οΌλ΄οNµοnΉιξψΫNΊιώλΉοm΄λ^ψΫN΄ίεώ:γ^7ηηn}εώwη=αΞη}λMΫNxλΞΉΫNΊλ^·οοnύΫNΊλήιέ΄λήχΫN·ιώοNφλχο~Ήλ΄λ®οm΄οΎΉλm΄λ^ψΫN΄λ^χο~ΉοχΩώϊλήΈλΩώλ^ν®ΌιώωΩήΊλ^·οοnύΩήΊλήιέιήτί΄ΫMΌλ^τοNφιώόλήλ^ψλοέ΄ίmφΫNγmΫNλ^ΪοέιΞλ^ΈλΈΫN½ιν΄οΌλ΄οNλ^ύλφΫέΡ­ηΌλ΄λΞΉλ^ΈλφΫNωο~Ήο}΄οΌλ΄λnφλ^λοnΉλ΄ιΞλΎΫNΊιώφΫNχοφιώλ½΄λ~ιξψοnµο~ψΫNµλΎµλήο~ψΫNψλΞΉΫN·οnΉλ^ΫNλ^ϊλή»λ^ψλήινΫNxλΞΉΫNΊιώοΉοm΄οχλχΫNψλΞΉΫNϋλΞ½οΉΫNϊλφο~½ιώΫNµλΎµλήο~ψΫNψλΞΉΫNΈλ^φι½΄λ®ιώψλφΩνΡ®xλΞΉΫNΌιώλοNµλΎΉΫNΌλφιύ΄οχλχΫNµΫN·ιΞΉλ^ΫMψα½΄λ®µλ~ψιώφοέ΄λ~φιώτΫNψλΞµο΄λόλ~οΈλχΫNψλΞΉΫNχιώωοn·λ΄ο®½λΉιύ»ο}΄ιΞλΎΫNο®Ήοnλ^ύΫNµιξΈΫNχο¶ο½ολ΄λ^φλµΩν΄γήψο}΄ί½ϊίΝΫMυίmόίMΫMυίέφίMΫMφίϊίM΄λ^λ΄ί}όίτΫNτοΝ΄ο®ΉοnχλήιξχΫNΌλ^ϊλ΄λnΉλΫN·λΞΉλ~›λΈΫNϋλήψλΝ΄ιΞλ~µιΝ΄η®½ο~½ιώΫNγ~vΫNµιξΈΫN·ιώοµλήΫNιύ΄λΉοΉλ~ψλΈΫNψλόοΡ­γ®ιξψο}΄λ^φλ΄ο~ΉιΞΊΩήΌιώχοΉλ΄λήΫN΄λ^χο~ΉοχΩώΊιώοχΩώ΄έ­΄γ~οnιώφλ^ο΄γΎµοnµιήιξΈΫNµιξΈΫNλ^οnοNΉΫMΌη~=αΝ΄αώτλΫN:ιώο΄αΞ½λ~Ήιξχλ½ΩνΡ­·Ϋ}΄η~9αύΡ®=ιξ·ιΞωλΉλΪΡ­Ωέ΄ολήυοΉΫNψλήψιΞΉο}ΫNΈλχλ~φλήτο½ιώο}΄λ^λ΄ο~λ~½λ^ΫN·λ^φλχΡ­ΫN·λ^ιώλή·λ^ΫNyηnο}΄λ®οm΄οNωλnλή·ΫNτλ^»λχΡ­ΫNοn»λ^λήΪλ^ψλήιν΄ο~ψοnωλ~ψοφλΈΫNΈλ^ψλ]΄ιώΫNψλΞΉΫNΌιώλ΄οNµλΎΉΡ­ΫN΄οnλnοχΩξψοΞψλM΄λ^λ΄λNχλήψλλ^τΩξόιήλMΩέ΄λΉο~·οn½οNψλήϊλ΄λήλ^»λ΄λ^ο΄οΉοΞψΡ­ΫNιύλήλΉοΝ΄οnωιΞΉο}΄λ®οm΄οΌλ΄οΌλ^ι½οήο΄λ^λ΄ίτί΄οNµλΎΉο}Ρ®5λ®ψλφΫNψλΞΉΫN·οχοιέ΄λιήµλήΫN½ο}΄ιΞ½ο®ΉΩΝ΄ο®Ήοn½λ®ύΫN½ο΄λήΫN;ιώλΎλ΄η~Ήλ^φλ~ΌΫN7ιώο~ιΞΉΫNµιξΈΫNχο¶ιή½ο΄λNΌοψοNχέ­Ωώλ^ν®Όιώωλ®ιώΈο}λ~ιέο~½οΉιήµοMοΞιΞ΄Ων
+# LaoZhou Foods β€” laozhoufoods.com
+
+GitHub repository: [diqpet-oss/laozhoufoods](https://github.com/diqpet-oss/laozhoufoods)
+
+This repository contains the deployable static website at its root. It is not nested under a `site/` folder.
+
+Static, responsive B2B website built from the supplied LaoZhou brand guide, product catalogue, factory footage and social assets.
+
+## Run locally
+
+From this directory:
+
+```bash
+python3 -m http.server 4173
+```
+
+Open `http://127.0.0.1:4173/`.
+
+## Pages
+
+- `index.html` β€” brand-led home page
+- `products.html` β€” four product ranges, flavors and formats
+- `craft.html` β€” process, production and quality story
+- `story.html` β€” brand history and milestones
+- `wholesale.html` β€” trade, distribution and private label
+- `contact.html` β€” form, contact details and trade FAQ
+- `thank-you.html` β€” form success page
+- `privacy.html`, `terms.html`, `404.html`
+
+## Deploy
+
+### Netlify β€” recommended
+
+The included `netlify.toml` sets security headers, cache rules and publishes this folder.
+
+1. Connect the repository containing this `site/` directory to Netlify.
+2. Set **Publish directory** to `site` (or run Netlify from inside `site/`).
+3. Add `laozhoufoods.com` as the custom domain and follow Netlify's DNS instructions.
+4. Add `www.laozhoufoods.com`, set the desired primary domain, and enable the automatically managed HTTPS certificate.
+
+Forms use Netlify Forms. After the first production deploy, confirm both `contact-inquiry` and `trade-inquiry` appear under **Forms** in the Netlify dashboard. Submissions redirect to `/thank-you.html`.
+
+### Cloudflare Pages
+
+Upload or connect the `site/` directory as the project output. The static files work as-is. Netlify form handling does not apply; configure a Forms endpoint or another serverless endpoint before launch.
+
+## Before launch β€” required owner confirmation
+
+Replace or verify the following with the brand owner. These are intentionally not invented in the site:
+
+- Public inquiry email: `laozhoufood@gmail.com` (confirmed).
+- Public WhatsApp: `+86 180 6888 9836`.
+- Legal company name, registered address and Chinese company details for the footer/legal pages.
+- Certificate names and numbers, validity dates and the exact SKUs covered.
+- Ingredient, nutrition and allergen declarations for each export SKU.
+- Carton dimensions, gross weight, pallet configuration and MOQ.
+- Export Incoterms, lead times, price validity and sample/shipping charges.
+- Country-specific labeling and importer-of-record responsibilities.
+- Whether any product is eligible for vegan, vegetarian, halal, non-GMO or similar claims.
+- Final review of the privacy policy and website terms against the operating entity and target markets.
+
+## Content policy used
+
+The English copy relies on verifiable catalogue and factory-film facts:
+
+- founded in 1986
+
+Search and AI retrieval:
+
+- Canonical URLs use the live `www.laozhoufoods.com` host.
+- `sitemap.xml` lists the six main pages plus the buyer FAQ.
+- Organization, WebSite, product collection, service, breadcrumb and FAQ structured data explain the business without inventing certifications, prices or stock availability.
+- `llms.txt` gives AI retrieval systems a concise, source-linked overview of the company and its products.
+- slow-braised flavor and ready-to-eat positioning
+- 9-month ambient shelf-life stated in the catalogue
+- 15 standardized production steps
+- PLC-controlled forming and a modern connected production line
+- listed retail and 2 Γ— 2.5 kg bulk formats
+
+The site does **not** claim universal vegan, vegetarian, halal, non-GMO, preservative-free or health-benefit status. Animal-derived broth and flavor directions exist in the range. Destination-market documentation and final product claims must be confirmed per SKU.
+
+## Assets
+
+Source material remains in the parent directory. The published image set is under `assets/images/`. Factory stills were extracted from the native 4K source and are served responsively (768 / 1280 / 1920 / 2560 / 3840 px). Full-resolution delivery stills are stored separately in the parent folder at `4K_FACTORY_STILLS/`. The factory film is compressed for web at `assets/video/laozhou-factory-film.mp4` (approximately 22 MB, lazy-loaded in the player).
+
+The header uses the brand-red logo for strong contrast against the cream navigation. The footer uses the white version against the dark footer.
+
+The home-page hero uses a clean 4K factory crop that excludes the source video's logo overlay and subtitle area. Its 768, 1280, 1920, 2560 and 3840 px versions have been checked with local Vision OCR and contain no detected text.
+
+Fonts are self-hosted in `assets/fonts/`: Cormorant Garamond and Manrope (SIL Open Font License).
+
+## SEO
+
+Included:
+
+- unique titles, descriptions and social cards
+- canonical URLs for public pages
+- Organization structured data on the home page
+- `robots.txt` and `sitemap.xml`
+- descriptive image alt text
+- no-index rules for the thank-you and 404 pages
+
+After the custom domain is live, verify it in Google Search Console and submit `https://laozhoufoods.com/sitemap.xml`.

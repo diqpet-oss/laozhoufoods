@@ -1,1 +1,4 @@
-็๗๋๖ูÞต๋พน้๎๘Ýญดูญใ^้ฮ๏ฝฺÛMัญ็~ฝ๏น้Þต๏MฺÛNผ๏๘๏N๗Ýญูþ๛๏พ๛ู๎๋^ํฎผ้þ๙๋ฎ้þธ๏}๋~้Ý๏~ฝ๏น้Þต๏M๏ฮ้อ
+User-agent: *
+Allow: /
+
+Sitemap: https://www.laozhoufoods.com/sitemap.xml
