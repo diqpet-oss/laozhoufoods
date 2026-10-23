@@ -1,4 +1,38 @@
 {
+  "rewrites": [
+    {
+      "source": "/zh/:path*",
+      "destination": "/zh/:path*"
+    },
+    {
+      "source": "/es/:path*",
+      "destination": "/es/:path*"
+    },
+    {
+      "source": "/fr/:path*",
+      "destination": "/fr/:path*"
+    },
+    {
+      "source": "/de/:path*",
+      "destination": "/de/:path*"
+    },
+    {
+      "source": "/pt/:path*",
+      "destination": "/pt/:path*"
+    },
+    {
+      "source": "/ja/:path*",
+      "destination": "/ja/:path*"
+    },
+    {
+      "source": "/ko/:path*",
+      "destination": "/ko/:path*"
+    },
+    {
+      "source": "/ar/:path*",
+      "destination": "/ar/:path*"
+    }
+  ],
   "redirects": [
     {
       "source": "/zh",
