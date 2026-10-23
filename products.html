@@ -79,7 +79,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="header-actions">
-        <div class="utility-links" aria-label="Social links">
+        <label class="language-picker" aria-label="Choose language"><span class="language-picker__globe" aria-hidden="true">◎</span><select data-language-select aria-label="Choose language"><option value="/products.html" selected>English</option><option value="/zh/products.html">中文</option><option value="/es/products.html">Español</option><option value="/fr/products.html">Français</option><option value="/de/products.html">Deutsch</option><option value="/pt/products.html">Português</option><option value="/ja/products.html">日本語</option><option value="/ko/products.html">한국어</option><option value="/ar/products.html">العربية</option></select></label><div class="utility-links" aria-label="Social links">
           <a href="https://www.instagram.com/laozhoufood/" target="_blank" rel="noopener">IG</a>
           <a href="https://www.tiktok.com/@laozhoufood" target="_blank" rel="noopener">TT</a>
         </div>
@@ -315,5 +315,15 @@
     </div>
   </footer>
   <script src="assets/js/main.js" defer></script>
+
+<script>
+(() => {
+  const picker = document.querySelector("[data-language-select]");
+  if (!picker) return;
+  picker.addEventListener("change", () => {
+    if (picker.value) window.location.href = picker.value;
+  });
+})();
+</script>
 </body>
 </html>

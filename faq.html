@@ -114,7 +114,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="header-actions">
-        <div class="utility-links" aria-label="Social links"><a href="https://www.instagram.com/laozhoufood/" target="_blank" rel="noopener">IG</a><a href="https://www.tiktok.com/@laozhoufood" target="_blank" rel="noopener">TT</a></div>
+        <label class="language-picker" aria-label="Choose language"><span class="language-picker__globe" aria-hidden="true">◎</span><select data-language-select aria-label="Choose language"><option value="/faq.html" selected>English</option><option value="/zh/faq.html">中文</option><option value="/es/faq.html">Español</option><option value="/fr/faq.html">Français</option><option value="/de/faq.html">Deutsch</option><option value="/pt/faq.html">Português</option><option value="/ja/faq.html">日本語</option><option value="/ko/faq.html">한국어</option><option value="/ar/faq.html">العربية</option></select></label><div class="utility-links" aria-label="Social links"><a href="https://www.instagram.com/laozhoufood/" target="_blank" rel="noopener">IG</a><a href="https://www.tiktok.com/@laozhoufood" target="_blank" rel="noopener">TT</a></div>
         <a class="btn btn--red" href="contact.html">Start an inquiry</a>
       </div>
     </div>
@@ -189,5 +189,15 @@
     </div>
   </footer>
   <script src="assets/js/main.js" defer></script>
+
+<script>
+(() => {
+  const picker = document.querySelector("[data-language-select]");
+  if (!picker) return;
+  picker.addEventListener("change", () => {
+    if (picker.value) window.location.href = picker.value;
+  });
+})();
+</script>
 </body>
 </html>

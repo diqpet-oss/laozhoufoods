@@ -73,7 +73,7 @@
     <div class="header-inner">
       <a href="index.html" aria-label="LaoZhou Foods home"><img class="brand-logo brand-logo--red" src="assets/images/laozhou-logo-red.webp" width="948" height="524" alt="LaoZhou Foods"></a>
       <nav class="main-nav" aria-label="Primary navigation"><a href="products.html">Our range</a><a href="craft.html">The craft</a><a href="wholesale.html" aria-current="page">Wholesale</a><a href="story.html">Our story</a><a href="contact.html">Contact</a></nav>
-      <div class="header-actions"><div class="utility-links" aria-label="Social links"><a href="https://www.instagram.com/laozhoufood/" target="_blank" rel="noopener">IG</a><a href="https://www.tiktok.com/@laozhoufood" target="_blank" rel="noopener">TT</a></div><a class="btn btn--red" href="#inquiry">Start an inquiry <svg aria-hidden="true" width="17" height="17"><use href="assets/icons.svg#arrow-right"></use></svg></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span aria-hidden="true"></span></button></div>
+      <div class="header-actions"><label class="language-picker" aria-label="Choose language"><span class="language-picker__globe" aria-hidden="true">◎</span><select data-language-select aria-label="Choose language"><option value="/wholesale.html" selected>English</option><option value="/zh/wholesale.html">中文</option><option value="/es/wholesale.html">Español</option><option value="/fr/wholesale.html">Français</option><option value="/de/wholesale.html">Deutsch</option><option value="/pt/wholesale.html">Português</option><option value="/ja/wholesale.html">日本語</option><option value="/ko/wholesale.html">한국어</option><option value="/ar/wholesale.html">العربية</option></select></label><div class="utility-links" aria-label="Social links"><a href="https://www.instagram.com/laozhoufood/" target="_blank" rel="noopener">IG</a><a href="https://www.tiktok.com/@laozhoufood" target="_blank" rel="noopener">TT</a></div><a class="btn btn--red" href="#inquiry">Start an inquiry <svg aria-hidden="true" width="17" height="17"><use href="assets/icons.svg#arrow-right"></use></svg></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span aria-hidden="true"></span></button></div>
     </div>
   </header>
   <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
@@ -213,5 +213,15 @@
     </div>
   </footer>
   <script src="assets/js/main.js" defer></script>
+
+<script>
+(() => {
+  const picker = document.querySelector("[data-language-select]");
+  if (!picker) return;
+  picker.addEventListener("change", () => {
+    if (picker.value) window.location.href = picker.value;
+  });
+})();
+</script>
 </body>
 </html>
