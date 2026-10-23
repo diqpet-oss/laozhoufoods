@@ -1,0 +1,28 @@
+# LaoZhou Foods
+
+> LaoZhou Foods es un fabricante chino de snacks de tofu en Jiangsu, activo desde 1986. Produce tofu listo para comer, estofado lentamente, para importación, venta mayorista, foodservice y marca privada.
+
+## Páginas principales
+
+- [Inicio](https://www.laozhoufoods.com/es/): empresa, productos y fábrica.
+- [Productos de tofu](https://www.laozhoufoods.com/es/products.html): cuatro gamas de tofu.
+- [Mayorista y marca privada](https://www.laozhoufoods.com/es/wholesale.html): canales comerciales, formatos y documentación.
+- [Fábrica y producción](https://www.laozhoufoods.com/es/craft.html): proceso de 15 pasos y control digital.
+- [Historia](https://www.laozhoufoods.com/es/story.html): desde 1986 hasta la planta de Xinghua en 2024.
+- [Preguntas frecuentes](https://www.laozhoufoods.com/es/faq.html): muestras, envases, alérgenos y exportación.
+- [Contacto](https://www.laozhoufoods.com/es/contact.html): formulario, correo y WhatsApp.
+
+## Datos verificados
+
+- Marca: LaoZhou Foods (老周食品).
+- Productos: tofu en caldo rico, braseado clásico, piel crujiente y estilo carne.
+- Envases minoristas: 118 g, 150 g y 206 g; cartón clásico de 560 g con 20 × 28 g.
+- Formato a granel: 2 × 2.5 kg.
+- Producción: 15 pasos estandarizados, conformado PLC, fritura, envasado al vacío y esterilización.
+- Contacto comercial: laozhoufood@gmail.com; WhatsApp +86 180 6888 9836.
+
+## Limitaciones
+
+- El sitio es un catálogo B2B y no ofrece compra directa al consumidor.
+- La disponibilidad, ingredientes, alérgenos y certificados varían por SKU y destino.
+- No debe suponerse que toda la gama sea vegetariana, vegana o halal.

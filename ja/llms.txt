@@ -1,0 +1,28 @@
+# LaoZhou Foods
+
+> LaoZhou Foods は江蘇省を拠点とする中国豆腐スナックのメーカーで、1986年から事業を続けています。じっくり煮込んだ食べきりタイプの豆腐を、輸入・卸売・外食・PB向けに製造しています。
+
+## 主要ページ
+
+- [ホーム](https://www.laozhoufoods.com/ja/)：会社、製品、工場の概要。
+- [豆腐製品](https://www.laozhoufoods.com/ja/products.html)：4種類の豆腐製品。
+- [卸売・PB](https://www.laozhoufoods.com/ja/wholesale.html)：販売チャネル、包装、資料。
+- [工場・製造](https://www.laozhoufoods.com/ja/craft.html)：15工程とデジタル管理。
+- [ブランドストーリー](https://www.laozhoufoods.com/ja/story.html)：1986年から2024年の新工場まで。
+- [バイヤーFAQ](https://www.laozhoufoods.com/ja/faq.html)：サンプル、包装、アレルゲン、輸出。
+- [お問い合わせ](https://www.laozhoufoods.com/ja/contact.html)：フォーム、メール、WhatsApp。
+
+## 確認済み情報
+
+- ブランド：LaoZhou Foods（老周食品）。
+- 製品：濃厚だし豆腐、クラシック煮込み、皮パリッ豆腐、肉感風豆腐。
+- 小売包装：118 g、150 g、206 g。560 gカートンには20 × 28 g入り。
+- 業務用包装：2 × 2.5 kg。
+- 製造：15の標準工程、PLC成形、高温調理、真空包装、殺菌。
+- 取引窓口：laozhoufood@gmail.com、WhatsApp +86 180 6888 9836。
+
+## 注意事項
+
+- 本サイトはB2B向けで、消費者への直接販売は行っていません。
+- 在庫、原材料、アレルゲン、認証はSKUと輸出先により異なります。
+- 全製品がベジタリアン、ヴィーガン、ハラル対応とは限りません。
