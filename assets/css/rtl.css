@@ -1,0 +1,49 @@
+/* Right-to-left adjustments for the Arabic localized site. */
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .breadcrumb ol,
+html[dir="rtl"] .main-nav,
+html[dir="rtl"] .btn-row,
+html[dir="rtl"] .range-actions,
+html[dir="rtl"] .header-actions,
+html[dir="rtl"] .utility-links {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .link-arrow svg,
+html[dir="rtl"] .btn svg {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .link-arrow:hover svg {
+  transform: scaleX(-1) translateX(4px);
+}
+
+html[dir="rtl"] .note-box {
+  border-left: 0;
+  border-right: 3px solid var(--gold);
+}
+
+html[dir="rtl"] .floating-quote {
+  right: auto;
+  left: 22px;
+}
+
+html[dir="rtl"] .language-picker__globe {
+  transform: none;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: right;
+}
+
+html[dir="rtl"] .form-grid,
+html[dir="rtl"] .contact-layout,
+html[dir="rtl"] .split {
+  direction: rtl;
+}
