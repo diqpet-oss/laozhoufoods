@@ -1,103 +1,1 @@
-# LaoZhou Foods ‚Äî laozhoufoods.com
-
-GitHub repository: [diqpet-oss/laozhoufoods](https://github.com/diqpet-oss/laozhoufoods)
-
-This repository contains the deployable static website at its root. It is not nested under a `site/` folder.
-
-Static, responsive B2B website built from the supplied LaoZhou brand guide, product catalogue, factory footage and social assets.
-
-## Run locally
-
-From this directory:
-
-```bash
-python3 -m http.server 4173
-```
-
-Open `http://127.0.0.1:4173/`.
-
-## Pages
-
-- `index.html` ‚Äî brand-led home page
-- `products.html` ‚Äî four product ranges, flavors and formats
-- `craft.html` ‚Äî process, production and quality story
-- `story.html` ‚Äî brand history and milestones
-- `wholesale.html` ‚Äî trade, distribution and private label
-- `contact.html` ‚Äî form, contact details and trade FAQ
-- `thank-you.html` ‚Äî form success page
-- `privacy.html`, `terms.html`, `404.html`
-
-## Deploy
-
-### Netlify ‚Äî recommended
-
-The included `netlify.toml` sets security headers, cache rules and publishes this folder.
-
-1. Connect the repository containing this `site/` directory to Netlify.
-2. Set **Publish directory** to `site` (or run Netlify from inside `site/`).
-3. Add `laozhoufoods.com` as the custom domain and follow Netlify's DNS instructions.
-4. Add `www.laozhoufoods.com`, set the desired primary domain, and enable the automatically managed HTTPS certificate.
-
-Forms use Netlify Forms. After the first production deploy, confirm both `contact-inquiry` and `trade-inquiry` appear under **Forms** in the Netlify dashboard. Submissions redirect to `/thank-you.html`.
-
-### Cloudflare Pages
-
-Upload or connect the `site/` directory as the project output. The static files work as-is. Netlify form handling does not apply; configure a Forms endpoint or another serverless endpoint before launch.
-
-## Before launch ‚Äî required owner confirmation
-
-Replace or verify the following with the brand owner. These are intentionally not invented in the site:
-
-- Public inquiry email: `laozhoufood@gmail.com` (confirmed).
-- Public WhatsApp: `+86 180 6888 9836`.
-- Legal company name, registered address and Chinese company details for the footer/legal pages.
-- Certificate names and numbers, validity dates and the exact SKUs covered.
-- Ingredient, nutrition and allergen declarations for each export SKU.
-- Carton dimensions, gross weight, pallet configuration and MOQ.
-- Export Incoterms, lead times, price validity and sample/shipping charges.
-- Country-specific labeling and importer-of-record responsibilities.
-- Whether any product is eligible for vegan, vegetarian, halal, non-GMO or similar claims.
-- Final review of the privacy policy and website terms against the operating entity and target markets.
-
-## Content policy used
-
-The English copy relies on verifiable catalogue and factory-film facts:
-
-- founded in 1986
-
-Search and AI retrieval:
-
-- Canonical URLs use the live `www.laozhoufoods.com` host.
-- `sitemap.xml` lists the six main pages plus the buyer FAQ.
-- Organization, WebSite, product collection, service, breadcrumb and FAQ structured data explain the business without inventing certifications, prices or stock availability.
-- `llms.txt` gives AI retrieval systems a concise, source-linked overview of the company and its products.
-- slow-braised flavor and ready-to-eat positioning
-- 9-month ambient shelf-life stated in the catalogue
-- 15 standardized production steps
-- PLC-controlled forming and a modern connected production line
-- listed retail and 2 √ó 2.5 kg bulk formats
-
-The site does **not** claim universal vegan, vegetarian, halal, non-GMO, preservative-free or health-benefit status. Animal-derived broth and flavor directions exist in the range. Destination-market documentation and final product claims must be confirmed per SKU.
-
-## Assets
-
-Source material remains in the parent directory. The published image set is under `assets/images/`. Factory stills were extracted from the native 4K source and are served responsively (768 / 1280 / 1920 / 2560 / 3840 px). Full-resolution delivery stills are stored separately in the parent folder at `4K_FACTORY_STILLS/`. The factory film is compressed for web at `assets/video/laozhou-factory-film.mp4` (approximately 22 MB, lazy-loaded in the player).
-
-The header uses the brand-red logo for strong contrast against the cream navigation. The footer uses the white version against the dark footer.
-
-The home-page hero uses a clean 4K factory crop that excludes the source video's logo overlay and subtitle area. Its 768, 1280, 1920, 2560 and 3840 px versions have been checked with local Vision OCR and contain no detected text.
-
-Fonts are self-hosted in `assets/fonts/`: Cormorant Garamond and Manrope (SIL Open Font License).
-
-## SEO
-
-Included:
-
-- unique titles, descriptions and social cards
-- canonical URLs for public pages
-- Organization structured data on the home page
-- `robots.txt` and `sitemap.xml`
-- descriptive image alt text
-- no-index rules for the thank-you and 404 pages
-
-After the custom domain is live, verify it in Google Search Console and submit `https://laozhoufoods.com/sitemap.xml`.
+€}¥·ŒµÈ˛ZÎŒüÔù¥„ÆüÈ˛∏Ô}¥{o4˜ç¥ÈŒµÈ˛⁄ÎŒüÔû∫È˛üÎé˜ŸÓ∑È˛ù—≠„æΩÔé<Ôû∂€NˆÎûÙÈ˛˜Îﬁ¯È˛ˆÔ›⁄€N[ÎéΩÔ^ÙÎû¯ŸﬁüÔ~˜Ÿ˛úÎ^üÌÆºÈ˛˘ÎÆüÈ˛∏Ô~]€ŒºÔé¯ÔN˜›≠üŸ˛ªÎﬁ¯ÎŒ˘ÎmûÎ~üÈ›üÎéΩÔ^ÙÎû¯ŸﬁüÔ~˜Ÿ˛úÎ^üÌÆºÈ˛˘ÎÆüÈ˛∏Ô}Ω—≠ÁéºÎﬁ˜€NˆÎûÙÈ˛˜Îﬁ¯È˛ˆÔ›¥Î~üÈÓ¯Î^ΩÈÓ˜€N¯ÎŒπ€N∏ÎûÙÈŒüÔﬁµÎnúÎù¥Ô~¯Î^¯Îﬁ∑€N˚Îû∂Ô~ΩÔéπ€NµÔç¥Îﬁ¯Ô}¥ÔnüÈ˛¯ŸÌ¥„ﬁ¯€NΩÔ}¥ÈÓüÔç¥ÈÓπÔ~¯Îû∏€N˘ÈÓ∏Îûˆ€Nµ€N¥Ô~ΩÔéπŸ˛¥€N∫È˛úÎéπÔmû—≠Á~¯Î^¯Îﬁ∑ŸÕ¥ÔnπÔ~ÙÈ˛ûÔ~ΩÔÆπ€N6ﬂn6€N˚Îû∂Ô~ΩÔéπ€N∂ÔûΩÈŒ¯€N∫ÔnüÈ›¥ÔéºÎù¥Ô~˘ÔNÙÈŒΩÎû∏€NÎ^üÂÆºÈ˛˘€N∂ÔnµÈÓ∏€NªÔûΩÎéπŸÕ¥ÔNˆÈ˛∏Ôû∑Ôç¥Î~µÔéµÈŒüÎæ˘Îùú€N∫Î^∑ÔéüÔn˝€N∫È˛üÔéµÎæπ€NµÈÓ∏€N˜È˛∑ÎﬁµÈÕ¥Î^˜Ô~πÔé˜ŸÌ—≠∑€}¥Án˘ÈÌ¥ÈŒüÎ~µÈŒúÔ›—Æ:ÔnüÈ›¥ÔéºÎﬁ˜€N∏ÎﬁˆÎû∑ÔéüÔn˝›≠—Æ¥ÎN¥ÎnµÔ~º—ÆÙÔﬁ¯ÎŒüÈÌ˜€MùÈ›¥ÎŒ¯ÔéÙŸÓ˜ÎûˆÔÆπÔm¥ﬂçıﬂΩ˜—Æ¥ÎN¥—≠·˛ÙÎûû€N¥ÎŒ¯ÔéÙ›≠üŸ˝ıﬂm˚ŸÌÙŸÌÙŸÌı›≠¯ﬂ]˚ﬂ}üÎMû—≠€}∑€NtÎ^ªÎû˜—≠Ÿ›¥ÎNΩÈÓ∏Îû¸ŸÓºÔéùÈŒ¥€G∂ÛOx€N∂ÔnµÈÓ∏ŸﬁúÎû∏€NºÈ˛ùÎù¥ÔNµÎæπ—≠ù€N¥ÔNˆÈ˛∏Ôû∑Ôé˜ŸÓºÔéùÈŒ¥€G∂ÛOx€N∫È˛˘Ôm¥ÔNˆÈ˛∏Ôû∑Ôç¥ÔnµÈÓªÎû˜ŸÕ¥ÎÆúÎ^˙È˛ˆÔ}¥Î^ûÎç¥ÎÆüÔnùÎ^¯Ô}Ÿ›¥ÎN∑ÔnµÎÆ¯ŸÓºÔéùÈŒ¥€G∂ÛOx€NÙÔnüÎ~πÔ~˜ŸÕ¥ÔNˆÈ˛∏Ôû∑ÔéΩÈ˛û€NµÈÓ∏€NıÔûµÈŒΩÔé˝€N˜ÔéüÔn˝—≠ù€N¥Ô~¯È˛ˆÔ›ûÎŒ¯ÈﬁúÎM¥{o4˜ç¥ÎnˆÎ^ûÎç¥ÎŒΩÔ~¯È˛ˆÔ›¥Î^ûÎç¥ÈﬁΩÈŒπÔ~¯È˛ûÎû˜—≠ù€N¥ÔæºÈ˛úÎû˜Î^úÎùûÎŒ¯ÈﬁúÎM¥{o4˜ç¥ÔéˆÎ^∏Îùú€N∏Îﬁ˜ÔéˆÎﬁ∂Ôû¯ÎﬁüÈÌ¥Î^ûÎç¥ÔNˆÎﬁ˙Î^¯Îù¥ÈŒµÎnπÈÕŸ›¥ÎN∑È˛ûÔéµÎ~¯ŸÓºÔéùÈŒ¥€G∂ÛOx€N∫È˛ˆÈ›ú€N∑È˛ûÔéµÎ~¯€N∏Îû¯Î^ΩÈŒ˜€NµÈÓ∏€N¯ÔnµÎéπ€N:„^u—≠ù€N¥ÔéºÎ^ûÈΩùÔﬁüÔùûÎŒ¯ÈﬁúÎM¥{o4˜ç¥ÎÆüÔnù€N˜Ôû∑Î~πÔ~˜€NÙÎ^ªÎùŸ›¥ÎNÙÔnΩÔÆµÎ~˝ŸÓºÔéùÈŒ¥ŸÕ¥ÎN¯ÎûˆÈﬁ˜ŸÓºÔéùÈŒ¥ŸÕ¥ÎM¯ﬂM¯ŸÓºÔéùÈŒ¥—≠€}∑€N8ÎûÙÈŒüÔ›—≠∑€}∑€NÎû¯ÈŒΩÎÆ˝€G∂ÛOx€NˆÎû∑È˛ùÈﬁπÈÓ∏Îû∏—≠ÁéºÎù¥ÎﬁûÎ~úÔû∏Îû∏€N¥ÈÓπÔéúÎﬁ∫Ô›ûÔéüÈﬁúÎM¥Ô~πÔé˜€N˜Îû∑ÔûˆÎﬁ¯Ô›¥ÎŒπÎ^∏ÎûˆÔ}ú€N∑Î^∑ÎŒπ€NˆÔûúÎû˜€NµÈÓ∏€NÙÔû∂ÈŒΩÔ~ºÎû˜€N¯ÎŒΩÔ}¥ÎÆüÈŒ∏ÎûˆŸÌ—≠ıŸÌ¥„~üÈÓûÎû∑Ôç¥ÔéºÎù¥ÔnπÔNüÔ~ΩÔéüÔn˝€N∑È˛ûÔéµÎﬁûÎﬁûÎΩ¥ÔéºÎﬁ˜€N¥Ô~ΩÔéπŸ˛¥€N∏ÎﬁˆÎû∑ÔéüÔn˝€N¯È˝¥·ÓπÔéúÎﬁ∫Ô›û—≠ˆŸÌ¥Á~πÔç¥Ÿ≠öÁN˘ÎnúÎﬁ˜ÎÕ¥ÎéΩÔnπÎ~¯È˛ˆÔ›öŸ≠¥Ôéü€N¥Ô~ΩÔéπÎM¥€ŒüÔm¥Ôn˘ÈÌ¥·ÓπÔéúÎﬁ∫Ô›¥ÎÆˆÈ˛ù€NΩÈÓ˜Îﬁ∏Îù¥ÎN˜Îﬁ¯ÎùüÎMΩŸÌﬂ}û€N5Îé∏€N¥ÈŒµÈ˛⁄ÎŒüÔû∫È˛üÎé˜ŸÓ∑È˛ùÎM¥Î^˜€N¯ÎŒπ€N∑Ôû˜ÔéüÈ›¥ÎéüÈﬁµÎﬁû€NµÈÓ∏€N∫È˛úÈŒüÔΩ¥·ÓπÔéúÎﬁ∫Ô›ªÔ}¥„éÁ}¥ÎﬁûÔ~¯Ôn˘Î~¯ÎﬁüÈÓ˜ŸÌﬂçû€N5Îé∏€N¥Ôæ˚ÔΩûÈŒµÈ˛⁄ÎŒüÔû∫È˛üÎé˜ŸÓ∑È˛ùÎMú€N˜Îû¯€N¯ÎŒπ€N∏Îû˜ÎﬁˆÎû∏€NÙÔnΩÈﬁµÔn˝€N∏È˛ùÎ^ΩÈÌú€NµÈÓ∏€NπÈÓµÎnúÎù¥ÔéºÎù¥Î^˘ÔéüÈﬁµÔéΩÎ~µÈŒúÔ›¥ÈﬁµÈÓµÎæπÎç¥„ŒxÁétÁ}¥Î~πÔn¯Îﬁ∫Îﬁ∑Î^¯Îùû—≠„ÆüÔnùÔ}¥Ôû˜Îù¥·ÓπÔéúÎﬁ∫Ô›¥„ÆüÔnùÔ}û€N5ÎÆ¯Îûˆ€N¯ÎŒπ€N∫ÎﬁˆÔ~¯€NÙÔnüÎé˘Î~¯ÎﬁüÈÌ¥ÎéπÔNúÈ˛˝ŸÕ¥Î~üÈÓ∫ÎﬁˆÈ›¥ÎnüÔéº€N¥Î~üÈÓ¯Î^∑ÔçùÎﬁûÔ^˘ÎﬁˆÔﬁ¥€NµÈÓ∏€N¥ÔéˆÎ^∏ÎùùÎﬁûÔ^˘ÎﬁˆÔﬁ¥€NµÔNÙÎûµÔm¥ÔûûÎéπÔm¥Ÿ≠ö„ÆüÔnùÔ}öŸ≠¥Îﬁû€N¯ÎŒπ€NÎû¯ÈŒΩÎÆ˝€N∏Î^˜ÎŒ∂È˛µÔn∏ŸÌ¥Á~˘ÎnùÎﬁ˜Ô~ΩÈ˛ûÔ}¥ÔnπÎéΩÔnπÎ~¯€N¯È˝¥ÎMüÔéºÎ^ûÈΩùÔﬁüÔùûÎŒ¯ÈﬁúÎMû—≠€}∑€}¥„~úÈ˛˘Îé∫ÈŒµÔnπ€NtÎ^ªÎû˜—≠ÁûÙÈŒüÎ^∏€NüÔm¥Î~üÈÓûÎû∑Ôç¥ÔéºÎù¥ÎN˜Îﬁ¯ÎùüÎM¥ÎéΩÔnπÎ~¯È˛ˆÔ›¥Î^˜€N¯ÎŒπ€NÙÔnüÈÆπÎ~¯€NüÔû¯ÔN˘Ôçû€NxÎŒπ€N˜ÔéµÔéΩÎ}¥ÎÆΩÈŒπÔ}¥ÔæüÔnõ€NµÔ}ùÎﬁ˜ŸÌ¥·ÓπÔéúÎﬁ∫Ô›¥ÎÆüÔnù€NºÎ^ûÎéúÎﬁûÎΩ¥ÎéüÎû˜€NûÈ˛¯€NµÔNÙÈŒ˝›Ω¥Î~üÈÓ∫ÎﬁªÔûˆÎù¥Î]¥„ÆüÔnùÔ}¥ÎûûÎéÙÈ˛ΩÈÓ¯€NüÔm¥Î^ûÈ˛¯ÎŒπÔm¥Ô~πÔn˙ÎûˆÈŒπÔ~˜€NπÈÓ∏ÔNüÎﬁûÔç¥ÎnπÎÆüÔnπ€NúÎ^˘ÈÓ∑ÎÕû—≠€}∑€N6Îû∫È˛ˆÎù¥ÈŒµÔûûÎ~º€G∂ÛOx€NˆÎûıÔûΩÔnπÎç¥È˛˚ÈÓπÔm¥Î~üÈÓ∫ÎﬁˆÈﬁµÔéΩÈ˛û—≠ÁnπÔNúÎ^∑Îù¥È˛ˆ€N˙ÎûˆÎﬁ∫Ô›¥ÔéºÎù¥ÎÆüÈŒúÈ˛˚ÎﬁûÎΩ¥ÔæΩÔéº€N¯ÎŒπ€N∂ÔnµÈÓ∏€NüÔæûÎûˆŸÌ¥ÁéºÎû˜Îù¥Î^ˆÎù¥ÎﬁûÔéπÈÓ¯ÎﬁüÈÓµÈŒúÔ›¥ÈÓüÔç¥ÎﬁûÔÆπÈÓ¯Îû∏€NΩÈÌ¥ÔéºÎù¥Ô~ΩÔéπ›≠—≠ù€NtÔû∂ÈŒΩÎ}¥ÎﬁûÔ^˘ÎﬁˆÔ›¥ÎûùÎ^ΩÈÕ⁄€N¥ÈŒµÈ˛⁄ÎŒüÔû∫È˛üÎé4ÎæùÎ^ΩÈÕûÎ~üÈﬁ¥€MºÎ~üÈÓ∫ÎﬁˆÈﬁπÎçΩŸÌŸ›¥ÁN˘ÎnúÎﬁ∑€N{ÎŒµÔé˜„^ÙÔM⁄€N¥ŸΩ¸ﬂ≠¥ﬂ]¸ﬂM¥ﬂ≠¸ﬂÕ¸€M˝ﬂÕ˜ﬂÆ¥ŸÌŸ›¥·ŒπÎæµÈÕ¥Î~üÈﬁÙÎ^ûÔ›¥ÈÓµÈﬁπŸÕ¥ÔnπÎæΩÔ~¯ÎûˆÎû∏€NµÎé∏ÔnπÔ~˜€NµÈÓ∏€N7ÎŒΩÈÓπÔ~π€N∑È˛ùÔNµÈÓ˝€N∏Îû¯Î^ΩÈŒ˜€N∫È˛ˆ€N¯ÎŒπ€N∫È˛üÔéπÔmüÈŒπÎæµÈÕ¥ÔNµÎæπÔ}û—≠ù€N7ÎûˆÔéΩÎÆΩÎ~µÔéπ€NûÎ^ùÎû˜€NµÈÓ∏€NûÔûùÎnπÔn˜ŸÕ¥ÔÆµÈŒΩÎéΩÔé˝€N∏Î^¯Îû˜€NµÈÓ∏€N¯ÎŒπ€NπÔŒµÎ~¯€Nw·æyÔ}¥Î~üÔÆπÔnπÎçû—≠ù€N=ÈÓªÔnπÎéΩÎûûÔçú€NûÔû¯ÔnΩÔéΩÈ˛û€NµÈÓ∏€NµÈŒúÎûˆÎæπÈÌ¥ÎéπÎ~úÎ^ˆÎ^¯ÎﬁüÈÓ˜€N∫È˛ˆ€NπÎ^∑ÎÕ¥Îû¸ÔNüÔn¯€Nw·æyŸÌŸ›¥„~µÔn¯È˛û€N∏ÎﬁùÎûûÔ~ΩÈ˛ûÔ}ú€NªÔnüÔ~˜€N˚ÎûΩÎæºÔçú€NÙÎ^úÈŒπÔç¥Î~üÈÓ∫ÎﬁªÔûˆÎ^¯ÎﬁüÈÌ¥Î^ûÎç¥·ﬁÁ]û—≠ù€N9ÔŒÙÈ˛ˆÔç¥„ﬁûÎ~üÔéπÔnùÔ}ú€NúÎûµÎç¥ÔéΩÈﬁπÔ}ú€NÙÔnΩÎ~π€N˙Î^úÎﬁ∏Îﬁ¯Ô›¥Î^ûÎç¥Ô~µÈﬁÙÈŒπŸ˛˜ÎŒΩÔNÙÎﬁûÎΩ¥Î~ºÎ^ˆÎæπÔ}û—≠ù€N7È˛˘ÈÓ¯Ôn˝Ÿﬁ˜ÔNπÎ~ΩÎÆΩÎ}¥ÈŒµÎnπÈŒΩÈÓª€NµÈÓ∏€NΩÈﬁÙÈ˛ˆÔéπÔmùÈ˛∫ŸﬁˆÎû∑È˛ˆÎç¥ÔnπÔ~ÙÈ˛ûÔ~ΩÎnΩÈŒΩÔéΩÎû˜ŸÌŸ›¥ÁæºÎû¯ÎŒπÔm¥Î^ûÔ›¥ÔNˆÈ˛∏Ôû∑Ôç¥Îﬁ˜€NπÈŒΩÎæΩÎnúÎù¥ÎÆüÔm¥ÔÆπÎæµÈÌú€N˙ÎûªÎû¯Î^ˆÎﬁµÈÌú€NºÎ^úÎ^úŸÕ¥ÈÓüÈÌù„æ·˝¥È˛ˆ€N˜ÎﬁùÎﬁúÎ^ˆ€N∑ÈŒµÎﬁùÔ}û—≠ù€N:ÎﬁûÎ^ú€NˆÎû˙ÎﬁπÔΩ¥È˛∫€N¯ÎŒπ€NÙÔnΩÔÆµÎ~˝€NÙÈ˛úÎﬁ∑Ô›¥Î^ûÎç¥ÔæπÎn˜Îﬁ¯Îù¥ÔéπÔnùÔ}¥Î^ªÎ^ΩÈÓ˜Ôç¥ÔéºÎù¥È˛ÙÎûˆÎ^¯ÎﬁûÎΩ¥ÎûûÔéΩÔé˝€NµÈÓ∏€N¯Î^ˆÎæπÔç¥ÈﬁµÔnõÎû¯Ô}û—≠€}∑€N7È˛ûÔéπÈÓ¯€NÙÈ˛úÎﬁ∑Ô›¥Ôû˜Îû∏—≠ÁéºÎù¥„ûûÎæúÎﬁ˜ÎÕ¥Î~üÔN˝€NˆÎûúÎﬁπÔ}¥È˛û€N˙ÎûˆÎﬁ∫ÎﬁµÎnúÎù¥Î~µÔéµÈŒüÎæ˘Îù¥Î^ûÎç¥ÎÆµÎ~¯È˛ˆÔ›ùÎÆΩÈŒù€N∫Î^∑Ôé˜›≠—≠ù€N∫È˛˘ÈÓ∏Îû∏€NΩÈÌ¥ﬂ]˝ﬂÕ˙—≠Á~πÎ^ˆÎ~º€NµÈÓ∏€N5„›¥ÔnπÔéˆÎﬁπÔÆµÈÕ⁄—≠Ÿ›¥„~µÈÓüÈÓΩÎ~µÈÕ¥Áûv·Œ˜€N˘Ô~π€N¯ÎŒπ€NúÎﬁ˙Îù¥ÎN˚Ôæ˚ŸÓúÎ^üÌÆºÈ˛˘ÎÆüÈ˛∏Ô}ûÎ~üÈﬁ¥€NºÈ˛˜Ôçû—≠ù€N¥Ô~ΩÔéπÈﬁµÔMûÔŒùÈŒ¥€NúÎﬁ˜Ôé˜€N¯ÎŒπ€N˜Îﬁ¸€NùÎ^ΩÈÌ¥ÔNµÎæπÔ}¥ÔNúÔû˜€N¯ÎŒπ€N∂Ôû˝Îûˆ€N:„^uŸÌŸ›¥·˛ˆÎæµÈÓΩÌÆµÔéΩÈ˛ûŸÕ¥ÁæπÎnwÎﬁ¯Îùú€NÙÔnüÎé˘Î~¯€N∑È˛úÈŒπÎ~¯ÎﬁüÈÌú€N˜ÎûˆÔÆΩÎ~πŸÕ¥ÎnˆÎûµÎé∑Ôn˘Èﬁ∂€NµÈÓ∏€N:„^u€N˜ÔéˆÔû∑Ôé˘ÔnπÎç¥ÎéµÔéµ€NπÔŒÙÈŒµÎﬁû€N¯ÎŒπ€N∂Ôû˜ÎﬁûÎû˜Ô}¥ÔæΩÔéºÈ˛˘Ôç¥ÎﬁûÔÆπÈÓ¯ÎﬁûÎΩ¥Î~πÔn¯Îﬁ∫Îﬁ∑Î^¯ÎﬁüÈÓ˜ŸÕ¥ÔNˆÎﬁ∑Îû˜€NüÔm¥Ô~¯È˛∑ÈΩ¥Î^˙Î^ΩÈŒµÎnΩÈŒΩÔé˝ŸÌŸ›¥ÎNúÈŒùÔ}ûÔé¸Ôé¥€NªÎﬁ˙Îû˜€N5„›¥ÔnπÔéˆÎﬁπÔÆµÈÕ¥Ô~˝Ô~¯ÎûùÔ}¥Î]¥Î~üÈÓ∑Îﬁ˜Îùú€N˜È˛˘Ôn∑ÎùùÈŒΩÈÓõÎû∏€NüÔÆπÔn˙ÎﬁπÔΩ¥È˛∫€N¯ÎŒπ€N∑È˛ùÔNµÈÓ˝€NµÈÓ∏€NΩÔé˜€NÙÔnüÎé˘Î~¯Ô}û—≠ù€N˜ÈŒüÔΩùÎnˆÎ^ΩÔ~πÎç¥ÎÆúÎ^˙È˛ˆ€NµÈÓ∏€NˆÎûµÎé˝Ÿﬁ¯È˝ùÎûµÔç¥ÔNüÔ~ΩÔéΩÈ˛ûÎﬁûÎΩŸ›¥ﬂ›ùÈﬁüÈÓ¯ÎÕ¥Î^ùÎnΩÎûûÔç¥Ô~ºÎûúÎ≠ùÈŒΩÎÆπ€N˜ÔéµÔéπÎç¥Îﬁû€N¯ÎŒπ€N∑Î^¯Î^úÈ˛ªÔûπ—≠ù€Mıﬂù¥Ô~¯Î^ûÎéµÔn∏Îﬁ⁄Îû∏€NÙÔnüÎé˘Î~¯ÎﬁüÈÌ¥Ô~¯ÎûÙÔ}Ÿ›¥ÁN„}ùÎ~üÈÓ¯ÔnüÈŒúÎû∏€N∫È˛ˆÈﬁΩÈÓª€NµÈÓ∏€Nµ€NùÈ˛∏ÎûˆÈÌ¥Î~üÈÓûÎû∑ÔéπÎç¥ÔNˆÈ˛∏Ôû∑ÔéΩÈ˛û€NúÎﬁûÎùŸ›¥ÈŒΩÔ~¯Îû∏€NˆÎû¯Î^ΩÈÕ¥Î^ûÎç¥ﬂm¥s{€MˆŸÌ˘€NõÎΩ¥În˘ÈŒõ€N∫È˛ˆÈﬁµÔé˜—≠ÁéºÎù¥Ô~ΩÔéπ€N∏È˛πÔ}¥Ÿ≠öÈÓüÔçöŸ≠¥Î~úÎ^ΩÈ›¥ÔûûÎﬁ˙ÎûˆÔ~µÈÕ¥ÔÆπÎæµÈÌú€N˙ÎûªÎû¯Î^ˆÎﬁµÈÌú€NºÎ^úÎ^úŸÕ¥ÈÓüÈÌù„æ·˝ú€NÙÔnπÔ~πÔn˙Î^¯Îﬁ˙ÎùùÎÆˆÎûπ€NüÔm¥ÎŒπÎ^úÔéºŸﬁ∂ÎûûÎû∫Îﬁ¯€N˜ÔéµÔé˘Ô}û€N5ÈÓΩÈﬁµÈÕùÎéπÔnΩÔÆπÎç¥ÎnˆÈ˛¯ÎÕ¥Î^ûÎç¥ÎÆúÎ^˙È˛ˆ€N∏ÎﬁˆÎû∑ÔéΩÈ˛ûÔ}¥Îû¸Îﬁ˜Ôç¥Îﬁû€N¯ÎŒπ€NˆÎ^ûÎæπŸÌ¥„éπÔ~¯ÎﬁûÎ^¯ÎﬁüÈÌùÈﬁµÔnõÎû¯€N∏È˛∑ÔûùÎûûÔéµÔéΩÈ˛û€NµÈÓ∏€N∫ÎﬁûÎ^ú€NÙÔnüÎé˘Î~¯€N∑ÈŒµÎﬁùÔ}¥Èﬁ˘Ô~¯€N∂Îù¥Î~üÈÓ∫ÎﬁˆÈﬁπÎç¥ÔNπÔm¥Á~Áùû—≠€}∑€N5Ô~˜Îû¯Ô}—ÆwÈ˛˘Ôn∑Îù¥ÈﬁµÔéπÔnΩÎ^ú€NˆÎûùÎ^ΩÈÓ˜€NΩÈÌ¥ÔéºÎù¥ÔNµÔnπÈÓ¯€N∏ÎﬁˆÎû∑ÔéüÔn˝ŸÌ¥ÁéºÎù¥ÔN˘ÎnúÎﬁ˜ÎŒπÎç¥ÎﬁùÎ^ªÎù¥Ô~πÔç¥Îﬁ˜€N˘ÈÓ∏Îûˆ€N¥Î^˜Ô~πÔé˜Ÿ˛ΩÈﬁµÎæπÔ}üÎMû€N:Î^∑ÔéüÔn˝€N˜ÔéΩÈŒúÔ}¥ÔæπÔnπ€NπÔŒ¯ÔnµÎ~¯Îû∏€N∫ÔnüÈ›¥ÔéºÎù¥ÈÓµÔéΩÔÆπ€M¯·Ω¥Ô~üÔûˆÎ~π€NµÈÓ∏€NµÔnπ€N˜ÎûˆÔÆπÎç¥ÔnπÔ~ÙÈ˛ûÔ~ΩÔÆπÈŒ˝€MºﬂΩ˙ﬂÕ¥Ÿ˝¥ﬂ]ˆﬂÕÙ€Mü€Mıﬂ›ˆﬂM¥Ÿ˝¥ﬂm˘ﬂ≠Ù€Mü€M˜ﬂÕ¯ﬂM¥ÔN¸€›û€N:ÔûúÈÕùÔnπÔ~üÈŒ˘ÔéΩÈ˛û€N∏ÎûúÎﬁ˙ÎûˆÔ›¥Ô~¯ÎﬁúÈŒ˜€NµÔnπ€N˜ÔéüÔnπÎç¥Ô~πÔNµÔnµÔéπÈŒ˝€NΩÈÌ¥ÔéºÎù¥ÔNµÔnπÈÓ¯€N∫È˛úÎéπÔm¥Î^¯€N¥ﬂéÂ˛:„^7ÁéÁn}Â˛wÁé=·ŒÁ}üÎMû€NxÎŒπ€N∫Î^∑ÔéüÔn˝€N∫ÎﬁúÈ›¥Îﬁ˜€N∑È˛ùÔNˆÎû˜Ô~πÎç¥ÎÆüÔm¥ÔæπÎm¥Î^¯€N¥Î^˜Ô~πÔé˜Ÿ˛˙Îﬁ∏ÎûüŸ˛úÎ^üÌÆºÈ˛˘Ÿﬁ∫Î^∑ÔéüÔn˝Ÿﬁ∫ÎﬁúÈ›ûÈﬁÙﬂé¥€MºÎ^ÙÔNˆÈ˛¸ÎﬁùÎ^¯ÎûúÔ›¥ﬂmˆ€N„mú€NúÎ^⁄Ô›ùÈŒüÎ^∏Îû∏€NΩÈÌ¥ÔéºÎù¥ÔNúÎ^˝Îûˆ€›û—≠ÁéºÎù¥ÎŒπÎ^∏Îûˆ€N˘Ô~πÔ}¥ÔéºÎù¥ÎnˆÎ^ûÎçùÔnπÎç¥ÈŒüÎæü€N∫È˛ˆ€N˜ÔéˆÈ˛ûÎΩ¥Î~üÈÓ¯ÔnµÔ~¯€NµÎæµÎﬁûÔ~¯€N¯ÎŒπ€N∑ÔnπÎ^ù€NûÎ^˙ÎﬁªÎ^¯ÎﬁüÈÌû€NxÎŒπ€N∫È˛üÔéπÔm¥Ôû˜Îû˜€N¯ÎŒπ€N˚ÎŒΩÔéπ€N˙ÎûˆÔ~ΩÈ˛û€NµÎæµÎﬁûÔ~¯€N¯ÎŒπ€N∏Î^ˆÈΩ¥ÎÆüÈ˛¯ÎûˆŸÌ—ÆxÎŒπ€NºÈ˛ùÎùùÔNµÎæπ€NºÎûˆÈ˝¥Ôû˜Îû˜€Nµ€N∑ÈŒπÎ^û€M¯·Ω¥ÎÆµÎ~¯È˛ˆÔ›¥Î~ˆÈ˛Ù€N¯ÎŒµÔç¥Îû¸Î~úÔû∏Îû˜€N¯ÎŒπ€N˜È˛˘Ôn∑Îù¥ÔÆΩÎéπÈ˝ªÔ}¥ÈŒüÎæü€NüÔÆπÔnúÎ^˝€NµÈÓ∏€N˜Ôû∂ÔéΩÔéúÎù¥Î^ˆÎûµŸÌ¥„ﬁ¯Ô}¥ﬂΩ˙ﬂÕú€Mıﬂm¸ﬂMú€Mıﬂ›ˆﬂMú€Mˆﬂù˙ﬂM¥Î^ûÎç¥ﬂ}¸ﬂçÙ€NÙÔÕ¥ÔÆπÔn˜ÎﬁüÈÓ˜€NºÎ^˙Îù¥ÎnπÎûû€N∑ÎŒπÎ~õÎû∏€N˚Îﬁ¯ÎÕ¥ÈŒüÎ~µÈÕ¥ÁÆΩÔ~ΩÈ˛û€N„~v€NµÈÓ∏€N∑È˛ûÔéµÎﬁû€NûÈ˝¥ÎéπÔéπÎ~¯Îû∏€N¯Îû¸Ôçû—≠„ÆüÈÓ¯Ô}¥Î^ˆÎù¥Ô~πÈŒ∫ŸﬁºÈ˛˜ÔéπÎç¥Îﬁû€N¥Î^˜Ô~πÔé˜Ÿ˛∫È˛ûÔé˜Ÿ˛¥›≠¥„~üÔnùÈ˛ˆÎ^ûÔç¥„æµÔnµÈﬁüÈÓ∏€NµÈÓ∏€NÎ^ûÔnüÔNπ€MºÁ~=·Õ¥·˛ÙÎûû€N:È˛ûÔç¥·ŒΩÎ~πÈÓ˜ÎùΩŸÌ—≠∑€}¥Á~9·˝—Æ=ÈÓ∑ÈŒ˘ÎéπÎç⁄—≠Ÿ›¥ÔûûÎﬁıÔûπ€N¯Îﬁ¯ÈŒπÔ}ú€N∏Îû˜Î~ˆÎﬁÙÔéΩÈ˛ûÔ}¥Î^ûÎç¥Ô~üÎ~ΩÎ^ú€N∑Î^ˆÎé˜—≠ù€N∑Î^ûÈ˛ûÎﬁ∑Î^ú€NyÁnÔ}¥ÎÆüÔm¥ÔN˘ÎnúÎﬁ∑€NÙÎ^ªÎû˜—≠ù€NÔnªÎ^ûÎﬁ⁄Î^¯ÎﬁüÈÌ¥Ô~¯Ôn˘Î~¯ÔûˆÎû∏€N∏Î^¯Î]¥È˛û€N¯ÎŒπ€NºÈ˛ùÎù¥ÔNµÎæπ—≠ù€N¥ÔnüÎnüÔé˜ŸÓ¯ÔŒ¯ÎM¥Î^ûÎç¥ÎN˜Îﬁ¯ÎûùÎ^ÙŸÓ¸ÈﬁúÎMŸ›¥ÎéπÔ~∑ÔnΩÔN¯Îﬁ˙Îù¥ÎﬁùÎ^ªÎù¥Î^úÔç¥ÔéπÔŒ¯—≠ù€NûÈ˝ùÎﬁûÎéπÔÕ¥Ôn˘ÈŒπÔ}¥ÎÆüÔm¥ÔéºÎù¥ÔéºÎ^ûÈΩùÔﬁüÔù¥Î^ûÎç¥ﬂçÙﬂç¥ÔNµÎæπÔ}—Æ5ÎÆ¯Îûˆ€N¯ÎŒπ€N∑Ôû˜ÔéüÈ›¥ÎéüÈﬁµÎﬁû€NΩÔ}¥ÈŒΩÔÆπŸÕ¥ÔÆπÔnΩÎÆ˝€NΩÔç¥Îﬁû€N;È˛üÎæúÎù¥Á~πÎ^ˆÎ~º€N7È˛ûÔ~üÈŒπ€NµÈÓ∏€N˜Ôû∂ÈﬁΩÔç¥ÎNºÔé¯ÔN˜›≠üŸ˛úÎ^üÌÆºÈ˛˘ÎÆüÈ˛∏Ô}ûÎ~üÈ›üÔ~ΩÔéπÈﬁµÔMûÔŒùÈŒ¥ŸÌ
