@@ -264,6 +264,37 @@
       .forEach((field) => field.removeAttribute("aria-invalid"));
   }
 
+  function buildMailtoFallback(form) {
+    const data = buildPayload(form);
+    const formLabel =
+      data["form-name"] === "trade-inquiry"
+        ? "Wholesale / trade inquiry"
+        : "Website contact inquiry";
+    const subject = `${formLabel} — ${data.company || data.name || "Website visitor"}`;
+    const lines = [
+      formLabel,
+      "",
+      `Name: ${data.name || ""}`,
+      `Company: ${data.company || ""}`,
+      `Email: ${data.email || ""}`,
+      `Phone / WhatsApp: ${data.phone || ""}`,
+      `Country / market: ${data.country || ""}`,
+      `Business type: ${data.channel || ""}`,
+      `Product interest: ${data["product-interests"] || ""}`,
+      "",
+      "Message:",
+      data.message || "",
+      "",
+      `Page: ${data["page-url"] || ""}`,
+      `Language: ${data["page-language"] || ""}`,
+    ];
+    return {
+      href: `mailto:laozhoufood@gmail.com?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(lines.join("\n"))}`,
+    };
+  }
+
   function showFormStatus(form, type, message, fallback = false) {
     const status = getStatusRegion(form);
     status.className = `form-status form-status--${type}`;
@@ -283,7 +314,7 @@
 
       const email = document.createElement("a");
       email.className = "btn btn--outline";
-      email.href = "mailto:laozhoufood@gmail.com";
+      email.href = buildMailtoFallback(form).href;
       email.textContent = inquiryCopy.email;
 
       const whatsapp = document.createElement("a");
