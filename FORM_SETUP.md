@@ -20,13 +20,10 @@ Vercel, where those static Netlify form attributes do not deliver mail.
 
 ## Delivery configuration
 
-The endpoint now supports FormSubmit without an API key. The FormSubmit
-destination is activated once, then kept in the Vercel environment as
-`FORMSUBMIT_EMAIL` so the form works without storing a secret in browser code.
-
-Set `FORMSUBMIT_EMAIL=laozhoufood@gmail.com` in Vercel Production, Preview and
-Development, then redeploy. FormSubmit requires a one-time activation email to
-the destination inbox; the activation link must be clicked once on that mailbox.
+The endpoint supports FormSubmit without an API key. The destination defaults to
+`laozhoufood@gmail.com`; optionally set `FORMSUBMIT_EMAIL` in Vercel to override
+it. FormSubmit requires a one-time activation email to the destination inbox;
+the activation link must be clicked once on that mailbox.
 
 The Web3Forms and Resend options remain available for a managed production
 provider. When several options are configured, Resend takes precedence, followed
