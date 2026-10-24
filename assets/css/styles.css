@@ -2126,6 +2126,64 @@ p {
   box-shadow: 0 0 0 3px rgba(157, 27, 32, 0.11);
 }
 
+.field input[aria-invalid="true"],
+.field select[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: var(--red);
+  box-shadow: 0 0 0 2px rgba(157, 27, 32, 0.16);
+}
+
+.form-status {
+  margin-top: 24px;
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status p {
+  margin: 0;
+}
+
+.form-status p + p {
+  margin-top: 6px;
+}
+
+.form-status--success {
+  border: 1px solid rgba(49, 111, 69, 0.32);
+  color: #275d39;
+  background: rgba(70, 139, 90, 0.09);
+}
+
+.form-status--warning {
+  border: 1px solid rgba(157, 27, 32, 0.24);
+  color: var(--ink);
+  background: rgba(157, 27, 32, 0.055);
+}
+
+.form-status--error {
+  border: 1px solid rgba(157, 27, 32, 0.38);
+  color: var(--ink);
+  background: rgba(157, 27, 32, 0.075);
+}
+
+.form-status__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.form-status__actions .btn {
+  min-height: 42px;
+  padding: 9px 16px;
+  font-size: 0.64rem;
+}
+
 .form-footer {
   display: grid;
   margin-top: 26px;
