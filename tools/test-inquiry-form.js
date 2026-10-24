@@ -65,6 +65,22 @@ async function fillAndSubmit(page) {
       body: JSON.stringify({ ok: false, error: "FORM_NOT_CONFIGURED" }),
     })
   );
+  await page.route("https://formsubmit.co/ajax/**", (route) =>
+    route.fulfill({
+      status: 200,
+      contentType: "application/json",
+      body: JSON.stringify({ success: "true" }),
+    })
+  );
+  await loadPage(page, "/contact.html");
+  await fillAndSubmit(page);
+  assert.match(await page.locator("[data-form-status]").innerText(), /reached/);
+  assert.equal(await page.inputValue("#name"), "");
+
+  await page.unroute("https://formsubmit.co/ajax/**");
+  await page.route("https://formsubmit.co/ajax/**", (route) =>
+    route.abort("failed")
+  );
   await loadPage(page, "/contact.html");
   await fillAndSubmit(page);
   assert.match(await page.locator("[data-form-status]").innerText(), /not been sent/);

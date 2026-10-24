@@ -344,6 +344,44 @@
     return payload;
   }
 
+  async function submitToFormSubmit(form) {
+    const data = buildPayload(form);
+    const formLabel =
+      data["form-name"] === "trade-inquiry"
+        ? "Wholesale / trade inquiry"
+        : "Website contact inquiry";
+    const response = await fetch(
+      "https://formsubmit.co/ajax/laozhoufood@gmail.com",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: data.name,
+          company: data.company,
+          email: data.email,
+          phone: data.phone,
+          country: data.country,
+          channel: data.channel,
+          product_interest: data["product-interests"],
+          message: data.message,
+          consent: data.consent,
+          page_url: data["page-url"],
+          page_language: data["page-language"],
+          _subject: `[LaoZhou website] ${formLabel} — ${
+            data.company || data.name
+          }`,
+          _captcha: "false",
+          _template: "table",
+        }),
+      }
+    );
+    const result = await response.json().catch(() => ({}));
+    return response.ok && String(result.success).toLowerCase() === "true";
+  }
+
   inquiryForms.forEach((form) => {
     if (!(form instanceof HTMLFormElement)) return;
     const submitButton = form.querySelector('button[type="submit"]');
@@ -373,42 +411,64 @@
       }
 
       try {
-        const response = await fetch("/api/inquiry", {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(buildPayload(form)),
-        });
-        const result = await response.json().catch(() => ({}));
-
-        if (response.ok && result.ok) {
-          form.reset();
-          showFormStatus(
-            form,
-            "success",
-            `${inquiryCopy.success} ${inquiryCopy.successNote}`
-          );
-          return;
-        }
-
-        if (result.fields) {
-          Object.keys(result.fields).forEach((name) => {
-            const field = form.elements.namedItem(name);
-            if (field instanceof HTMLElement) field.setAttribute("aria-invalid", "true");
+        let serverUnavailable = false;
+        try {
+          const response = await fetch("/api/inquiry", {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(buildPayload(form)),
           });
+          const result = await response.json().catch(() => ({}));
+
+          if (response.ok && result.ok) {
+            form.reset();
+            showFormStatus(
+              form,
+              "success",
+              `${inquiryCopy.success} ${inquiryCopy.successNote}`
+            );
+            return;
+          }
+
+          if (result.fields) {
+            Object.keys(result.fields).forEach((name) => {
+              const field = form.elements.namedItem(name);
+              if (field instanceof HTMLElement) {
+                field.setAttribute("aria-invalid", "true");
+              }
+            });
+          }
+
+          if (response.status === 422) {
+            showFormStatus(form, "error", inquiryCopy.invalid);
+            return;
+          }
+          serverUnavailable = true;
+        } catch {
+          serverUnavailable = true;
         }
 
-        if (response.status === 422) {
-          showFormStatus(form, "error", inquiryCopy.invalid);
-        } else if (response.status === 503) {
-          showFormStatus(form, "warning", inquiryCopy.unavailable, true);
-        } else {
-          showFormStatus(form, "error", inquiryCopy.network, true);
+        if (serverUnavailable) {
+          try {
+            const delivered = await submitToFormSubmit(form);
+            if (delivered) {
+              form.reset();
+              showFormStatus(
+                form,
+                "success",
+                `${inquiryCopy.success} ${inquiryCopy.successNote}`
+              );
+              return;
+            }
+          } catch {
+            // Both delivery routes failed. Preserve the form and show alternatives.
+          }
         }
-      } catch {
-        showFormStatus(form, "error", inquiryCopy.network, true);
+
+        showFormStatus(form, "error", inquiryCopy.unavailable, true);
       } finally {
         submitting = false;
         form.removeAttribute("aria-busy");
