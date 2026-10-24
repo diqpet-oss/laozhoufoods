@@ -227,11 +227,65 @@ async function deliverWithWeb3Forms(data, requestId) {
   return { configured: true, providerId: result.data?.id || null };
 }
 
+async function deliverWithFormSubmit(data, requestId) {
+  const destination =
+    process.env.FORMSUBMIT_EMAIL || "laozhoufood@gmail.com";
+  if (!process.env.FORMSUBMIT_EMAIL) {
+    return { configured: false };
+  }
+
+  const message = buildEmail(data, requestId);
+  const response = await fetch(
+    `https://formsubmit.co/ajax/${encodeURIComponent(destination)}`,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Origin: "https://www.laozhoufoods.com",
+        Referer: "https://www.laozhoufoods.com/contact.html",
+      },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        company: data.company,
+        phone: data.phone,
+        country: data.country,
+        channel: data.channel,
+        product_interest: data["product-interests"],
+        message: data.message,
+        page_url: data["page-url"] || "",
+        page_language: data["page-language"] || "",
+        request_id: requestId,
+        _subject: message.subject,
+        _captcha: "false",
+        _template: "table",
+      }),
+      signal: AbortSignal.timeout(12_000),
+    }
+  );
+
+  const result = await response.json().catch(() => ({}));
+  const success = String(result.success).toLowerCase() === "true";
+  if (!response.ok || !success) {
+    const error = new Error("EMAIL_PROVIDER_REJECTED");
+    error.providerStatus = response.status;
+    error.providerMessage =
+      result.message || "FormSubmit rejected the message";
+    throw error;
+  }
+
+  return { configured: true, providerId: requestId };
+}
+
 async function deliverInquiry(data, requestId) {
   if (process.env.RESEND_API_KEY && process.env.INQUIRY_FROM_EMAIL) {
     return deliverWithResend(data, requestId);
   }
-  return deliverWithWeb3Forms(data, requestId);
+  if (process.env.WEB3FORMS_ACCESS_KEY) {
+    return deliverWithWeb3Forms(data, requestId);
+  }
+  return deliverWithFormSubmit(data, requestId);
 }
 
 function getAllowedOrigins() {

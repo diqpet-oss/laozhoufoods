@@ -108,6 +108,51 @@ async function invokeWithWeb3Forms() {
   }
 }
 
+async function invokeWithFormSubmit() {
+  const previousFormSubmit = process.env.FORMSUBMIT_EMAIL;
+  const previousWeb3 = process.env.WEB3FORMS_ACCESS_KEY;
+  const previousResend = process.env.RESEND_API_KEY;
+  const previousFrom = process.env.INQUIRY_FROM_EMAIL;
+  const previousFetch = global.fetch;
+  delete process.env.RESEND_API_KEY;
+  delete process.env.INQUIRY_FROM_EMAIL;
+  delete process.env.WEB3FORMS_ACCESS_KEY;
+  process.env.FORMSUBMIT_EMAIL = "laozhoufood@gmail.com";
+  let sent = null;
+  global.fetch = async (url, options) => {
+    sent = { url, options, payload: JSON.parse(options.body) };
+    return {
+      ok: true,
+      status: 200,
+      async json() {
+        return { success: "true", message: "The form was submitted successfully." };
+      },
+    };
+  };
+  try {
+    const res = await invoke(validInquiry);
+    assert.equal(res.statusCode, 200);
+    assert.equal(res.body.ok, true);
+    assert.match(
+      sent.url,
+      /^https:\/\/formsubmit\.co\/ajax\/laozhoufood%40gmail\.com$/
+    );
+    assert.equal(sent.payload._captcha, "false");
+    assert.equal(sent.payload.email, "buyer@example.com");
+    assert.match(sent.payload._subject, /Example Imports/);
+  } finally {
+    if (previousFormSubmit === undefined) delete process.env.FORMSUBMIT_EMAIL;
+    else process.env.FORMSUBMIT_EMAIL = previousFormSubmit;
+    if (previousWeb3 === undefined) delete process.env.WEB3FORMS_ACCESS_KEY;
+    else process.env.WEB3FORMS_ACCESS_KEY = previousWeb3;
+    if (previousResend === undefined) delete process.env.RESEND_API_KEY;
+    else process.env.RESEND_API_KEY = previousResend;
+    if (previousFrom === undefined) delete process.env.INQUIRY_FROM_EMAIL;
+    else process.env.INQUIRY_FROM_EMAIL = previousFrom;
+    global.fetch = previousFetch;
+  }
+}
+
 const validInquiry = {
   "form-name": "contact-inquiry",
   name: "Test Buyer",
@@ -159,6 +204,7 @@ const validInquiry = {
 
   await invokeWithProvider();
   await invokeWithWeb3Forms();
+  await invokeWithFormSubmit();
 
   console.log("Inquiry API tests passed.");
 })().catch((error) => {

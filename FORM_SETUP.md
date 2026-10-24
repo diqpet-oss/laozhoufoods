@@ -18,11 +18,19 @@ submit JSON to `POST /api/inquiry`.
 The previous `data-netlify` attributes were removed. The live site is hosted on
 Vercel, where those static Netlify form attributes do not deliver mail.
 
-## Choose a delivery provider
+## Delivery configuration
 
-The code path is complete, but mail delivery remains inactive until a provider
-key is configured in the Vercel project. Web3Forms is the quicker option;
-Resend provides a branded sending domain and full HTML formatting.
+The endpoint now supports FormSubmit without an API key. The FormSubmit
+destination is activated once, then kept in the Vercel environment as
+`FORMSUBMIT_EMAIL` so the form works without storing a secret in browser code.
+
+Set `FORMSUBMIT_EMAIL=laozhoufood@gmail.com` in Vercel Production, Preview and
+Development, then redeploy. FormSubmit requires a one-time activation email to
+the destination inbox; the activation link must be clicked once on that mailbox.
+
+The Web3Forms and Resend options remain available for a managed production
+provider. When several options are configured, Resend takes precedence, followed
+by Web3Forms, then FormSubmit.
 
 ### Option A: Web3Forms (one key, no sending-domain setup)
 
