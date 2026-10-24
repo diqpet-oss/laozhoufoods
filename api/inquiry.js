@@ -230,9 +230,6 @@ async function deliverWithWeb3Forms(data, requestId) {
 async function deliverWithFormSubmit(data, requestId) {
   const destination =
     process.env.FORMSUBMIT_EMAIL || "laozhoufood@gmail.com";
-  if (!process.env.FORMSUBMIT_EMAIL) {
-    return { configured: false };
-  }
 
   const message = buildEmail(data, requestId);
   const response = await fetch(

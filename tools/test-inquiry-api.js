@@ -70,6 +70,47 @@ async function invokeWithProvider() {
   }
 }
 
+async function invokeWithDefaultFormSubmit() {
+  const previousWeb3 = process.env.WEB3FORMS_ACCESS_KEY;
+  const previousResend = process.env.RESEND_API_KEY;
+  const previousFrom = process.env.INQUIRY_FROM_EMAIL;
+  const previousFormSubmit = process.env.FORMSUBMIT_EMAIL;
+  const previousFetch = global.fetch;
+  delete process.env.RESEND_API_KEY;
+  delete process.env.INQUIRY_FROM_EMAIL;
+  delete process.env.WEB3FORMS_ACCESS_KEY;
+  delete process.env.FORMSUBMIT_EMAIL;
+  let sent = null;
+  global.fetch = async (url, options) => {
+    sent = { url, options, payload: JSON.parse(options.body) };
+    return {
+      ok: true,
+      status: 200,
+      async json() {
+        return { success: "true" };
+      },
+    };
+  };
+  try {
+    const res = await invoke(validInquiry);
+    assert.equal(res.statusCode, 200);
+    assert.match(
+      sent.url,
+      /^https:\/\/formsubmit\.co\/ajax\/laozhoufood%40gmail\.com$/
+    );
+  } finally {
+    if (previousWeb3 === undefined) delete process.env.WEB3FORMS_ACCESS_KEY;
+    else process.env.WEB3FORMS_ACCESS_KEY = previousWeb3;
+    if (previousResend === undefined) delete process.env.RESEND_API_KEY;
+    else process.env.RESEND_API_KEY = previousResend;
+    if (previousFrom === undefined) delete process.env.INQUIRY_FROM_EMAIL;
+    else process.env.INQUIRY_FROM_EMAIL = previousFrom;
+    if (previousFormSubmit === undefined) delete process.env.FORMSUBMIT_EMAIL;
+    else process.env.FORMSUBMIT_EMAIL = previousFormSubmit;
+    global.fetch = previousFetch;
+  }
+}
+
 async function invokeWithWeb3Forms() {
   const previousKey = process.env.WEB3FORMS_ACCESS_KEY;
   const previousResend = process.env.RESEND_API_KEY;
@@ -166,9 +207,6 @@ const validInquiry = {
 
 (async () => {
   let res = await invoke(validInquiry);
-  assert.equal(res.statusCode, 503);
-  assert.equal(res.body.error, "FORM_NOT_CONFIGURED");
-
   res = await invoke({
     "form-name": "contact-inquiry",
     name: "",
@@ -203,6 +241,7 @@ const validInquiry = {
   assert.equal(res.statusCode, 403);
 
   await invokeWithProvider();
+  await invokeWithDefaultFormSubmit();
   await invokeWithWeb3Forms();
   await invokeWithFormSubmit();
 
