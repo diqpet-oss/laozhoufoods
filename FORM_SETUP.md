@@ -18,12 +18,31 @@ submit JSON to `POST /api/inquiry`.
 The previous `data-netlify` attributes were removed. The live site is hosted on
 Vercel, where those static Netlify form attributes do not deliver mail.
 
-## Required activation step
+## Choose a delivery provider
 
-The code path is complete, but mail delivery remains inactive until one domain
-verified sender and an API key are configured in the Vercel project.
+The code path is complete, but mail delivery remains inactive until a provider
+key is configured in the Vercel project. Web3Forms is the quicker option;
+Resend provides a branded sending domain and full HTML formatting.
 
-### 1. Verify a Resend sending domain
+### Option A: Web3Forms (one key, no sending-domain setup)
+
+1. Create an access key at <https://web3forms.com/> and use
+   `laozhoufood@gmail.com` as its destination inbox.
+2. In Vercel, add `WEB3FORMS_ACCESS_KEY` to Production, Preview and Development.
+3. Redeploy and submit a clearly labelled test inquiry from `/contact.html`.
+4. Confirm that the test arrives at `laozhoufood@gmail.com`.
+
+The website endpoint submits the inquiry to Web3Forms server-side. The access
+key is never placed in the browser code. Do not use a key that is configured to
+forward to a different mailbox.
+
+Keep at least one provider configured. If both provider keys are missing, the
+site shows that the message was **not sent** and offers email and WhatsApp
+alternatives.
+
+### Option B: Resend (branded sending domain)
+
+#### 1. Verify a Resend sending domain
 
 In Resend, add and verify the sending domain used by LaoZhou Foods. DNS records
 must be added at the domain provider. Use a real sending identity such as:
@@ -36,21 +55,24 @@ The `from` address must be on a domain verified by Resend. Do not use a Gmail
 address as the sender; Gmail is the destination, not the authenticated sending
 domain.
 
-### 2. Create a restricted API key
+#### 2. Create a restricted API key
 
 Create a Resend API key that can send mail and save it only in Vercel's
 environment-variable settings. Never commit it to the repository or expose it in
 the browser.
 
-### 3. Add Vercel environment variables
+#### 3. Add Vercel environment variables
 
 Add these to Production, Preview and Development as appropriate:
 
 | Name | Required | Value |
 |---|---|---|
-| `RESEND_API_KEY` | yes | Restricted Resend sending key |
-| `INQUIRY_FROM_EMAIL` | yes | Verified sender, for example `LaoZhou Foods Website <website@laozhoufoods.com>` |
+| `RESEND_API_KEY` | for Resend | Restricted Resend sending key |
+| `INQUIRY_FROM_EMAIL` | for Resend | Verified sender, for example `LaoZhou Foods Website <website@laozhoufoods.com>` |
 | `INQUIRY_TO_EMAIL` | no | Defaults to `laozhoufood@gmail.com` |
+| `WEB3FORMS_ACCESS_KEY` | for Web3Forms | Access key with `laozhoufood@gmail.com` as destination |
+
+When both provider options are configured, Resend takes precedence.
 
 After adding or changing environment variables, redeploy the project.
 

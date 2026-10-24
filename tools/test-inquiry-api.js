@@ -70,6 +70,44 @@ async function invokeWithProvider() {
   }
 }
 
+async function invokeWithWeb3Forms() {
+  const previousKey = process.env.WEB3FORMS_ACCESS_KEY;
+  const previousResend = process.env.RESEND_API_KEY;
+  const previousFrom = process.env.INQUIRY_FROM_EMAIL;
+  const previousFetch = global.fetch;
+  delete process.env.RESEND_API_KEY;
+  delete process.env.INQUIRY_FROM_EMAIL;
+  process.env.WEB3FORMS_ACCESS_KEY = "test-web3forms-key";
+  let sent = null;
+  global.fetch = async (url, options) => {
+    sent = { url, options, payload: JSON.parse(options.body) };
+    return {
+      ok: true,
+      status: 200,
+      async json() {
+        return { success: true, data: { id: "web3forms_test_id" } };
+      },
+    };
+  };
+  try {
+    const res = await invoke(validInquiry);
+    assert.equal(res.statusCode, 200);
+    assert.equal(res.body.ok, true);
+    assert.equal(sent.url, "https://api.web3forms.com/submit");
+    assert.equal(sent.payload.access_key, "test-web3forms-key");
+    assert.equal(sent.payload.email, "buyer@example.com");
+    assert.match(sent.payload.subject, /Example Imports/);
+  } finally {
+    if (previousKey === undefined) delete process.env.WEB3FORMS_ACCESS_KEY;
+    else process.env.WEB3FORMS_ACCESS_KEY = previousKey;
+    if (previousResend === undefined) delete process.env.RESEND_API_KEY;
+    else process.env.RESEND_API_KEY = previousResend;
+    if (previousFrom === undefined) delete process.env.INQUIRY_FROM_EMAIL;
+    else process.env.INQUIRY_FROM_EMAIL = previousFrom;
+    global.fetch = previousFetch;
+  }
+}
+
 const validInquiry = {
   "form-name": "contact-inquiry",
   name: "Test Buyer",
@@ -120,6 +158,7 @@ const validInquiry = {
   assert.equal(res.statusCode, 403);
 
   await invokeWithProvider();
+  await invokeWithWeb3Forms();
 
   console.log("Inquiry API tests passed.");
 })().catch((error) => {

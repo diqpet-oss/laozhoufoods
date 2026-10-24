@@ -185,6 +185,55 @@ async function deliverWithResend(data, requestId) {
   return { configured: true, providerId: result.id || null };
 }
 
+async function deliverWithWeb3Forms(data, requestId) {
+  const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
+  if (!accessKey) return { configured: false };
+
+  const message = buildEmail(data, requestId);
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      access_key: accessKey,
+      subject: message.subject,
+      from_name: "LaoZhou Foods Website",
+      name: data.name,
+      email: data.email,
+      company: data.company,
+      phone: data.phone,
+      country: data.country,
+      channel: data.channel,
+      product_interest: data["product-interests"],
+      message: data.message,
+      consent: data.consent,
+      page_url: data["page-url"] || "",
+      page_language: data["page-language"] || "",
+      request_id: requestId,
+    }),
+    signal: AbortSignal.timeout(12_000),
+  });
+
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok || result.success !== true) {
+    const error = new Error("EMAIL_PROVIDER_REJECTED");
+    error.providerStatus = response.status;
+    error.providerMessage = result.message || "Web3Forms rejected the message";
+    throw error;
+  }
+
+  return { configured: true, providerId: result.data?.id || null };
+}
+
+async function deliverInquiry(data, requestId) {
+  if (process.env.RESEND_API_KEY && process.env.INQUIRY_FROM_EMAIL) {
+    return deliverWithResend(data, requestId);
+  }
+  return deliverWithWeb3Forms(data, requestId);
+}
+
 function getAllowedOrigins() {
   const origins = ["https://www.laozhoufoods.com", "https://laozhoufoods.com"];
   if (process.env.VERCEL_URL) {
@@ -232,7 +281,7 @@ module.exports = async function handler(req, res) {
     const requestId =
       normalizeString(req.headers["x-request-id"], 128) ||
       `lz_${crypto.randomUUID()}`;
-    const delivery = await deliverWithResend(validated.data, requestId);
+    const delivery = await deliverInquiry(validated.data, requestId);
 
     if (!delivery.configured) {
       return sendJson(res, 503, {
