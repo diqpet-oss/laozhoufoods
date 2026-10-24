@@ -46,7 +46,7 @@ async function fillAndSubmit(page) {
         : "application/octet-stream";
     await route.fulfill({ status: 200, contentType: type, path: file });
   });
-  await page.route("**/*.html", async (route) => {
+  await page.route(/\.html(?:\?.*)?$/, async (route) => {
     const file = path.join(
       root,
       decodeURIComponent(new URL(route.request().url()).pathname)
@@ -74,12 +74,20 @@ async function fillAndSubmit(page) {
   );
   await loadPage(page, "/contact.html");
   await fillAndSubmit(page);
-  assert.match(await page.locator("[data-form-status]").innerText(), /reached/);
-  assert.equal(await page.inputValue("#name"), "");
+  await page.waitForURL("**/thank-you.html?submitted=1&form=contact-inquiry");
+  await page.locator("[data-inquiry-success]").waitFor({ state: "visible" });
 
   await page.unroute("https://formsubmit.co/ajax/**");
   await page.route("https://formsubmit.co/ajax/**", (route) =>
     route.abort("failed")
+  );
+  await page.unroute("**/api/inquiry");
+  await page.route("**/api/inquiry", (route) =>
+    route.fulfill({
+      status: 503,
+      contentType: "application/json",
+      body: JSON.stringify({ ok: false, error: "FORM_NOT_CONFIGURED" }),
+    })
   );
   await loadPage(page, "/contact.html");
   await fillAndSubmit(page);
@@ -95,10 +103,17 @@ async function fillAndSubmit(page) {
       body: JSON.stringify({ ok: true, requestId: "test" }),
     })
   );
+  await loadPage(page, "/contact.html");
+  await page.fill("#name", "Test Buyer");
+  await page.fill("#company", "Test Importer");
+  await page.fill("#email", "buyer@example.com");
+  await page.fill("#country", "United States");
+  await page.selectOption("#channel", { index: 1 });
+  await page.fill("#message", "Please send a sample selection.");
+  await page.check('input[name="consent"]');
   await page.click('button[type="submit"]');
-  await page.waitForTimeout(300);
-  assert.match(await page.locator("[data-form-status]").innerText(), /reached/);
-  assert.equal(await page.inputValue("#name"), "");
+  await page.waitForURL("**/thank-you.html?submitted=1&form=contact-inquiry");
+  await page.locator("[data-inquiry-success]").waitFor({ state: "visible" });
 
   await loadPage(page, "/zh/contact.html");
   await page.route("**/api/inquiry", (route) =>
@@ -110,6 +125,19 @@ async function fillAndSubmit(page) {
   );
   await fillAndSubmit(page);
   assert.match(await page.locator("[data-form-status]").innerText(), /尚未发送/);
+
+  await loadPage(page, "/thank-you.html");
+  assert.equal(await page.locator("[data-inquiry-success]").isVisible(), false);
+  assert.equal(
+    await page.locator("[data-direct-success-message]").isVisible(),
+    true
+  );
+
+  await loadPage(page, "/zh/thank-you.html?submitted=1&form=contact-inquiry");
+  assert.match(await page.locator("[data-inquiry-success]").innerText(), /感谢您/);
+
+  await loadPage(page, "/ar/thank-you.html?submitted=1&form=trade-inquiry");
+  assert.equal(await page.locator("html").getAttribute("dir"), "rtl");
 
   await browser.close();
   console.log("Inquiry form browser tests passed.");

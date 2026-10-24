@@ -382,6 +382,42 @@
     return response.ok && String(result.success).toLowerCase() === "true";
   }
 
+  function redirectToSuccess(form) {
+    const language = (document.documentElement.lang || "en").split("-")[0];
+    const basePath =
+      language === "en" ? "/thank-you.html" : `/${language}/thank-you.html`;
+    const formName = form.getAttribute("name") || "contact-inquiry";
+    const url = new URL(basePath, window.location.origin);
+    url.searchParams.set("submitted", "1");
+    url.searchParams.set("form", formName);
+    window.location.assign(url.toString());
+  }
+
+  function setupSuccessPage() {
+    const page = document.querySelector("[data-inquiry-success]");
+    if (!page) return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("submitted") !== "1") {
+      page.hidden = true;
+      const directMessage = document.querySelector("[data-direct-success-message]");
+      if (directMessage) directMessage.hidden = false;
+      return;
+    }
+    page.hidden = false;
+    const directMessage = document.querySelector("[data-direct-success-message]");
+    if (directMessage) directMessage.hidden = true;
+    const requestId = document.querySelector("[data-success-request-id]");
+    if (requestId) {
+      requestId.textContent = `Reference: ${
+        params.get("form") === "trade-inquiry"
+          ? "Trade inquiry"
+          : "Website inquiry"
+      }`;
+    }
+  }
+
+  setupSuccessPage();
+
   inquiryForms.forEach((form) => {
     if (!(form instanceof HTMLFormElement)) return;
     const submitButton = form.querySelector('button[type="submit"]');
@@ -425,11 +461,7 @@
 
           if (response.ok && result.ok) {
             form.reset();
-            showFormStatus(
-              form,
-              "success",
-              `${inquiryCopy.success} ${inquiryCopy.successNote}`
-            );
+            redirectToSuccess(form);
             return;
           }
 
@@ -456,11 +488,7 @@
             const delivered = await submitToFormSubmit(form);
             if (delivered) {
               form.reset();
-              showFormStatus(
-                form,
-                "success",
-                `${inquiryCopy.success} ${inquiryCopy.successNote}`
-              );
+              redirectToSuccess(form);
               return;
             }
           } catch {
